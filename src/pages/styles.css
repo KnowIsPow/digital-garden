@@ -17,8 +17,21 @@
   }
 
   /* Typography */
+
+  .display-lg {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .display-md {
+    @apply text-lg md:text-xl lg:text-2xl;
+  }
+
+  .display-sm {
+    @apply text-base md:text-lg lg:text-xl;
+  }
+
   .display {
-    @apply font-mono text-xl md:text-2xl lg:text-3xl;
+    @apply font-mono;
   }
 
   .body {
@@ -27,7 +40,7 @@
 
   /* Input */
   .input {
-    @apply inline-flex items-center w-full px-4 py-2 text-sm font-medium transition duration-200 bg-white border border-gray-300 rounded-sm shadow-sm hover:bg-gray-50 focus:ring-indigo-500 focus:border-indigo-500;
+    @apply inline-flex items-center w-full px-4 py-2 text-sm font-medium transition duration-200 bg-white border border-gray-300 rounded-sm shadow-sm hover:border-black focus:ring-indigo-500 focus:border-indigo-500;
   }
 
   /* Buttons */

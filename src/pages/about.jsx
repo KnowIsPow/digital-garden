@@ -1,4 +1,6 @@
 import Page from 'features/page';
+import { TitleWithDescription } from 'ui/header/title-with-description';
+import { Container } from 'ui/layout/container';
 
 export default function AboutPage({}) {
   return (
@@ -7,7 +9,12 @@ export default function AboutPage({}) {
       description="Curtis Fisher is pretty cool!"
       canonical="/about"
     >
-      About Curtis
+      <Container>
+        <TitleWithDescription
+          title="About Curtis"
+          description="My values, principles, and story..."
+        />
+      </Container>
     </Page>
   );
 }

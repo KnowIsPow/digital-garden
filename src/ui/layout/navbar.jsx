@@ -2,10 +2,10 @@ import Button from 'ui/form/button';
 import Link from 'ui/link';
 
 const navigation = [
-  { label: 'about', href: 'about' },
-  { label: 'credentials', href: 'credentials' },
-  { label: 'blog', href: 'blog' },
-  { label: 'resources', href: 'resources' },
+  { label: 'about', href: '/about' },
+  { label: 'credentials', href: '/credentials' },
+  { label: 'blog', href: '/blog' },
+  { label: 'resources', href: '/resources' },
 ];
 
 export function Navbar({}) {
