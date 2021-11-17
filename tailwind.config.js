@@ -5,8 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#3498db',
-        accent: '#34495e',
+        primary: '#5D5C61',
+        accent: '#7395AE',
+      },
+      screens: {
+        print: { raw: 'print' },
       },
     },
   },

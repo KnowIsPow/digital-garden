@@ -18,11 +18,11 @@
 
   /* Typography */
   .display {
-    @apply font-serif font-semibold uppercase sm:tracking-widest;
+    @apply font-mono text-xl md:text-2xl lg:text-3xl;
   }
 
   .body {
-    @apply font-sans font-medium;
+    @apply font-mono font-medium text-primary;
   }
 
   /* Input */
@@ -40,6 +40,6 @@
   }
 
   .btn {
-    @apply inline-flex items-center px-4 py-2 text-sm font-medium transition duration-100 rounded-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply inline-flex items-center px-4 py-2 text-sm font-medium transition duration-100 rounded-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 print:hidden;
   }
 }
