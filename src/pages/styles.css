@@ -31,11 +31,11 @@
   }
 
   .display {
-    @apply font-mono;
+    @apply font-mono text-primary;
   }
 
   .body {
-    @apply font-mono font-medium text-primary;
+    @apply font-mono font-medium text-accent;
   }
 
   /* Input */

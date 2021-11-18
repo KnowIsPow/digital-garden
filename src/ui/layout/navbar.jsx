@@ -12,7 +12,7 @@ export function Navbar({}) {
   return (
     <nav className="py-4 border-b">
       <div className="section flex justify-between items-center">
-        <Link href="/" className="text-xl font-medium font-mono uppercase hover:drop-shadow-xl">
+        <Link href="/" className="display display-md lowercase hover:text-accent">
           Curtis Fisher
         </Link>
         <ul className="space-x-4 hidden md:block print:hidden">
@@ -21,7 +21,7 @@ export function Navbar({}) {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-lg border-b-2 border-transparent hover:border-primary p-2"
+                className="body border-b-2 border-transparent hover:border-primary p-2"
               >
                 {link.label}.
               </Link>

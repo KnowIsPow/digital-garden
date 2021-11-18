@@ -1,0 +1,16 @@
+export const values = [
+  'Never compromise on honesty.',
+  "If you say you're going to do something, do it.",
+  'Sacrifice in the short-term for the long-term.',
+  'Take risks, have some balls, be outspoken.',
+  'Listen twice as much as you speak.',
+  'Yes and (instead of no, but).',
+  "Maintain a forward thinking perspective. It's easier to change yourself than to change others.",
+  'Lead by example.',
+  "Plan tomorrow's work today.",
+  'Keep a sense of humor.',
+  'Speak candidly and authentically (minimize filtering).',
+  'Concentrate all efforts on the task at hand.',
+  "Prioritize what's important, get rid of what's not.",
+  'Do good in the world.',
+];

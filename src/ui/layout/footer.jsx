@@ -12,7 +12,7 @@ const navigation = {
   social: [
     {
       label: 'GitHub',
-      href: '#',
+      href: 'https://github.com/knowispow',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -51,21 +51,21 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="bg-white border-t">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav className="-mx-5 -my-2 flex flex-wrap justify-center print:hidden" aria-label="Footer">
+      <div className="section py-12 flex flex-col md:flex-row justify-between flex-wrap gap-4 items-center">
+        <nav className="flex flex-wrap justify-center print:hidden space-x-4" aria-label="Footer">
           {navigation.main.map((link) => (
-            <div key={link.label} className="px-5 py-2">
+            <div key={link.label} className="py-2">
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-lg border-b-2 border-transparent hover:border-primary p-2 lowercase"
+                className="body border-b-2 border-transparent hover:border-primary p-2 lowercase"
               >
                 {link.label}.
               </Link>
             </div>
           ))}
         </nav>
-        <div className="mt-8 flex justify-center space-x-6 print:hidden">
+        {/* <div className="flex justify-center space-x-6 print:hidden">
           {navigation.social.map((item) => (
             <LinkExternal
               key={item.label}
@@ -76,10 +76,8 @@ export function Footer() {
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </LinkExternal>
           ))}
-        </div>
-        <p className="mt-8 text-center text-base text-gray-400">
-          &copy; {new Date().getFullYear()} All rights reserved. Curtis Fisher.
-        </p>
+        </div> */}
+        <p className="text-center text-base text-gray-400">Made with ❤️ in Boston.</p>
       </div>
     </footer>
   );
