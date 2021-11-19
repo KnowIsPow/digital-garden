@@ -2,7 +2,7 @@ export function BulletedList({ items }) {
   return (
     <ul className="p-4 space-y-1 body">
       {items.map((item) => (
-        <div className="flex gap-x-2">
+        <div key={item} className="flex gap-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-primary flex-shrink-0"
