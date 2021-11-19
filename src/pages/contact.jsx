@@ -13,7 +13,7 @@ export default function ContactPage({}) {
 
   return (
     <Page
-      title="Contact Curtis Fisher"
+      title="Contact"
       description="Looking to get in touch with Curtis Fisher? Whether you have a new project idea, are looking for resources, or want to stay in touch, don't hesitate to reach out!"
       canonical="/contact"
     >
@@ -31,6 +31,8 @@ export default function ContactPage({}) {
               method="POST"
               action="/"
               data-netlify="true"
+              netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
               className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -74,6 +76,13 @@ export default function ContactPage({}) {
                   id="message"
                 />
               </div>
+
+              <p class="hidden">
+                <label>
+                  A message from the bots? <input name="bot-field" />
+                </label>
+              </p>
+              <div data-netlify-recaptcha="true"></div>
 
               <div className="sm:col-span-2">
                 <Button type="submit" className="w-full justify-center btn-primary lowercase">
