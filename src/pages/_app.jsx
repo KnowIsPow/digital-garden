@@ -1,3 +1,4 @@
+import { Head } from 'next/head';
 import { Layout } from 'ui/layout';
 import './styles.css';
 
