@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Button from 'ui/form/button';
 import Link from 'ui/link';
 
@@ -9,6 +10,7 @@ const navigation = [
 ];
 
 export function Navbar({}) {
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
   return (
     <header className="py-4 border-b">
       <div className="section flex justify-between items-center">
@@ -31,8 +33,28 @@ export function Navbar({}) {
         <Link href="/contact" className="hidden md:block">
           <Button className="btn-secondary lowercase">Get in touch</Button>
         </Link>
-        <Button className="btn-secondary md:hidden lowercase">Menu</Button>
+        <Button
+          onClick={() => setShowMobileMenu((current) => !current)}
+          className="btn-secondary md:hidden lowercase"
+        >
+          Menu
+        </Button>
       </div>
+      {showMobileMenu && (
+        <nav className="section -mx-2 pt-6 flex flex-col space-y-4 print:hidden">
+          {navigation.map((link) => {
+            return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="body border-b-2 border-transparent hover:border-primary p-2"
+              >
+                {link.label}.
+              </Link>
+            );
+          })}
+        </nav>
+      )}
     </header>
   );
 }
