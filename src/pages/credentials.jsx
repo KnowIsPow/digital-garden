@@ -19,7 +19,10 @@ export default function CredentialsPage({}) {
         />
         <div className="space-y-4 mt-6">
           {workExperience.map((experience) => (
-            <WorkExperience experience={experience} />
+            <WorkExperience
+              key={experience.company + '_' + experience.startDate}
+              experience={experience}
+            />
           ))}
         </div>
       </Container>
