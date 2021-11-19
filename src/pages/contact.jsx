@@ -32,7 +32,6 @@ export default function ContactPage({}) {
               action="/"
               data-netlify="true"
               netlify-honeypot="bot-field"
-              data-netlify-recaptcha="true"
               className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
               <input type="hidden" name="form-name" value="contact" />
@@ -82,7 +81,6 @@ export default function ContactPage({}) {
                   A message from the bots? <input name="bot-field" />
                 </label>
               </p>
-              <div data-netlify-recaptcha="true"></div>
 
               <div className="sm:col-span-2">
                 <Button type="submit" className="w-full justify-center btn-primary lowercase">
@@ -132,7 +130,7 @@ function SVGDots({}) {
       >
         <defs>
           <pattern
-            id="85737c0e-0916-41d7-917f-596dc7edfa27"
+            id="85737c0e-0916-41d7-917f-596dc7edfa28"
             x={0}
             y={0}
             width={20}
