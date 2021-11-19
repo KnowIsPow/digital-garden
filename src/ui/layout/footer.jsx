@@ -77,7 +77,7 @@ export function Footer() {
             </LinkExternal>
           ))}
         </div> */}
-        <p className="text-center text-base text-gray-400">Made with ❤️ in Boston.</p>
+        <p className="body lowercase">Made with ❤️ in Boston.</p>
       </div>
     </footer>
   );

@@ -45,11 +45,11 @@
 
   /* Buttons */
   .btn-primary {
-    @apply text-white border border-transparent bg-primary hover:bg-opacity-90 focus:ring-blue-800;
+    @apply body text-white border border-transparent bg-primary hover:bg-opacity-90 focus:ring-blue-800;
   }
 
   .btn-secondary {
-    @apply bg-white border border-gray-300 hover:border-black focus:ring-gray-500 sm:text-sm;
+    @apply body bg-white border border-gray-300 hover:border-black focus:ring-gray-500 sm:text-sm;
   }
 
   .btn {
