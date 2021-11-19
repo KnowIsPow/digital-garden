@@ -7,7 +7,7 @@ export default function CredentialsPage({}) {
   return (
     <Page
       title="Curtis Fisher's Credentials"
-      description="What gives Curtis credibility?"
+      description="This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt."
       canonical="/credentials"
     >
       <Container>

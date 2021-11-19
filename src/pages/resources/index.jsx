@@ -8,7 +8,7 @@ export default function ResourcesPage({}) {
   return (
     <Page
       title="Curtis's Resources"
-      description="A list of resources that curtis has found useful."
+      description="A collection of meaningful resources accumulated over my years. These have helped me immensely in growing to become who I am today, and this list will continue to grow as I discover more."
       canonical="/resources"
     >
       <Container>

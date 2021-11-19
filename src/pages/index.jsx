@@ -12,7 +12,7 @@ export default function IndexPage() {
   return (
     <Page
       title="Curtis Fisher - Digital Garden"
-      description="An opinionated starter kit for Next.js and TailwindCSS"
+      description="Welcome to my digial garden. It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way"
       canonical="/"
     >
       <Container>
@@ -37,6 +37,7 @@ export default function IndexPage() {
           <TitleWithDescription
             title="Book Recommendations"
             description="A selection of the best five books I've read."
+            tag="h2"
           />
           <BulletedList
             items={books

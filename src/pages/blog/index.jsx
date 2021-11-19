@@ -8,7 +8,7 @@ export default function BlogPage({}) {
   return (
     <Page
       title="Curtis Fisher Blog"
-      description="Articles written or shared by Curtis."
+      description="A selection of writings and resources that I've accumulated along my journey."
       canonical="/blog"
     >
       <Container>
