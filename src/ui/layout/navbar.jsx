@@ -41,7 +41,7 @@ export function Navbar({}) {
         </Button>
       </div>
       {showMobileMenu && (
-        <nav className="section -mx-2 pt-6 flex flex-col space-y-4 print:hidden">
+        <nav className="section -mx-2 pt-6 flex flex-col space-y-4 md:hidden print:hidden">
           {navigation.map((link) => {
             return (
               <Link
