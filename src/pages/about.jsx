@@ -30,7 +30,7 @@ export default function AboutPage({}) {
           <div className="space-y-2">
             <TitleWithDescription
               title="Top 5 Goals"
-              description="It's important to keep a focus on what purpose you're working towards. These are currently my top three priorities."
+              description="It's important to keep a focus on what purpose you're working towards. These are currently my top priorities."
               tag="h2"
             />
             <BulletedList items={personalGoals} />

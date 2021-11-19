@@ -1,8 +1,12 @@
 import { articles } from 'data/blog';
+import { books } from 'data/books';
 import { BlogGrid } from 'features/blog/grid';
 import Page from 'features/page';
+import { BulletedList } from 'ui/content/bulleted-list';
+import Button from 'ui/form/button';
 import { TitleWithDescription } from 'ui/header/title-with-description';
 import { Container } from 'ui/layout/container';
+import Link from 'ui/link';
 
 export default function IndexPage() {
   return (
@@ -19,7 +23,19 @@ export default function IndexPage() {
           />
         </div>
         <div className="mt-6">
-          <BlogGrid articles={articles.slice(0, 3)} />
+          <TitleWithDescription
+            title="Book Recommendations"
+            description="A selection of the best five books I've read."
+          />
+          <BulletedList
+            items={books
+              .sort((a, b) => b.score - a.score)
+              .map((book) => `${book.title} – ⭐ ${book.score}`)
+              .slice(0, 5)}
+          />
+          <Link href="/resources">
+            <Button>View more books</Button>
+          </Link>
         </div>
       </Container>
     </Page>
