@@ -1,5 +1,6 @@
 import { workExperience } from 'data/work-experience';
 import Page from 'features/page';
+import { BulletedList } from 'ui/content/bulleted-list';
 import { TitleWithDescription } from 'ui/header/title-with-description';
 import { Container } from 'ui/layout/container';
 
@@ -39,6 +40,7 @@ function WorkExperience({ experience }) {
       <div className="body display-sm">{experience.company}</div>
       <div className="body text-gray-400">{experience.location}</div>
       <p className="body mt-4">{experience.description}</p>
+      {experience.accomplishments && <BulletedList items={experience.accomplishments} />}
     </div>
   );
 }

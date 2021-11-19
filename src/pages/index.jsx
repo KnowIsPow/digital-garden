@@ -21,14 +21,14 @@ export default function IndexPage() {
             title="Hiya, I'm Curtis!"
             description="Welcome to my digial garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
           />
-          <div className="mt-4">
+          <div className="mt-6">
             <p className="body">Quick Links</p>
-            <div className="flex gap-x-2 mt-1">
+            <div className="flex gap-x-2 mt-2">
               <Link href="/about/#values">
-                <Button className="btn-secondary">Values</Button>
+                <Button>Values</Button>
               </Link>
               <Link href="/about/#goals">
-                <Button className="btn-secondary">Goals</Button>
+                <Button>Goals</Button>
               </Link>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function IndexPage() {
               .slice(0, 5)}
           />
           <Link href="/resources">
-            <Button>View more books</Button>
+            <Button className="btn-secondary">View more books</Button>
           </Link>
         </div>
       </Container>
