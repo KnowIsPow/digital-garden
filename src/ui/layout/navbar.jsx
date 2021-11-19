@@ -15,7 +15,7 @@ export function Navbar({}) {
     <header className="py-4 border-b">
       <div className="section flex justify-between items-center">
         <Link href="/" className="display display-md lowercase hover:text-accent">
-          Curtis Fisher
+          Curtis_Fisher
         </Link>
         <nav className="space-x-4 hidden md:block print:hidden">
           {navigation.map((link) => {
