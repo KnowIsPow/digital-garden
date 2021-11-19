@@ -14,7 +14,7 @@ export default function ContactPage({}) {
   return (
     <Page
       title="Contact Curtis Fisher"
-      description="Looking to get in touch with Curtis Fisher? Contact him here."
+      description="Looking to get in touch with Curtis Fisher? Whether you have a new project idea, are looking for resources, or want to stay in touch, don't hesitate to reach out!"
       canonical="/contact"
     >
       <Container>
@@ -33,6 +33,7 @@ export default function ContactPage({}) {
               data-netlify="true"
               className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
             >
+              <input type="hidden" name="form-name" value="contact" />
               <TextInput
                 placeholder="First Name"
                 autoComplete="given-name"
