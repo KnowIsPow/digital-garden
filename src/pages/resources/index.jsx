@@ -7,7 +7,7 @@ import { Container } from 'ui/layout/container';
 export default function ResourcesPage({}) {
   return (
     <Page
-      title="Curtis's Resources"
+      title="Resources"
       description="A collection of meaningful resources accumulated over my years. These have helped me immensely in growing to become who I am today, and this list will continue to grow as I discover more."
       canonical="/resources"
     >

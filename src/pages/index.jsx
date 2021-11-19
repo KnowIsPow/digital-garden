@@ -11,7 +11,7 @@ import Link from 'ui/link';
 export default function IndexPage() {
   return (
     <Page
-      title="Curtis Fisher - Digital Garden"
+      title="My Digital Garden"
       description="Welcome to my digial garden. It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way"
       canonical="/"
     >

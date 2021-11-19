@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-const siteName = 'Next Tailwind Starter';
+const siteName = 'Curtis Fisher';
 const twitterHandle = '';
 
 export default function Page({

@@ -8,7 +8,7 @@ import { Container } from 'ui/layout/container';
 export default function AboutPage({}) {
   return (
     <Page
-      title="About Curtis Fisher"
+      title="About"
       description="Storyteller, treasure hunter, and full-time marketer on the side. I love to learn, search for new ways to challenge myself, and work to become a greater person. This website serves as an ongoing personal and public resource and is an experiment in radical transparency."
       canonical="/about"
     >
