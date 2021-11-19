@@ -10,12 +10,12 @@ const navigation = [
 
 export function Navbar({}) {
   return (
-    <nav className="py-4 border-b">
+    <header className="py-4 border-b">
       <div className="section flex justify-between items-center">
         <Link href="/" className="display display-md lowercase hover:text-accent">
           Curtis Fisher
         </Link>
-        <ul className="space-x-4 hidden md:block print:hidden">
+        <nav className="space-x-4 hidden md:block print:hidden">
           {navigation.map((link) => {
             return (
               <Link
@@ -27,12 +27,12 @@ export function Navbar({}) {
               </Link>
             );
           })}
-        </ul>
+        </nav>
         <Link href="/contact" className="hidden md:block">
           <Button className="btn-secondary lowercase">Get in touch</Button>
         </Link>
         <Button className="btn-secondary md:hidden lowercase">Menu</Button>
       </div>
-    </nav>
+    </header>
   );
 }
