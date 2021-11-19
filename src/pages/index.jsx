@@ -21,6 +21,17 @@ export default function IndexPage() {
             title="Hiya, I'm Curtis!"
             description="Welcome to my digial garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
           />
+          <div className="mt-4">
+            <p className="body">Quick Links</p>
+            <div className="flex gap-x-2 mt-1">
+              <Link href="/about/#values">
+                <Button className="btn-secondary">Values</Button>
+              </Link>
+              <Link href="/about/#goals">
+                <Button className="btn-secondary">Goals</Button>
+              </Link>
+            </div>
+          </div>
         </div>
         <div className="mt-6">
           <TitleWithDescription
