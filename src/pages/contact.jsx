@@ -39,16 +39,16 @@ export default function ContactPage({}) {
                 autoComplete="given-name"
                 value={first}
                 onChange={(val) => setFirst(val)}
-                name="first"
-                id="first"
+                name="first-name"
+                id="first-name"
               />
               <TextInput
                 placeholder="Last Name"
                 autoComplete="family-name"
                 value={last}
                 onChange={(val) => setLast(val)}
-                name="email"
-                id="email"
+                name="last-name"
+                id="last-name"
               />
               <div className="sm:col-span-2">
                 <TextInput
