@@ -12,14 +12,14 @@ export default function IndexPage() {
   return (
     <Page
       title="My Digital Garden"
-      description="Welcome to my digial garden. It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way"
+      description="Welcome to my digital garden. It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way"
       canonical="/"
     >
       <Container>
         <div className="pb-8 border-b">
           <TitleWithDescription
             title="Hiya, I'm Curtis!"
-            description="Welcome to my digial garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
+            description="Welcome to my digital garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
           />
           <div className="mt-6">
             <p className="body">Quick Links</p>

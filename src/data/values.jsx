@@ -4,7 +4,7 @@ export const values = [
   'Sacrifice in the short-term for the long-term.',
   'Take risks, have some balls, be outspoken.',
   'Listen twice as much as you speak.',
-  'Yes and (instead of no, but).',
+  'Yes, and (instead of no, but).',
   "Maintain a forward thinking perspective. It's easier to change yourself than to change others.",
   'Lead by example.',
   "Plan tomorrow's work today.",
