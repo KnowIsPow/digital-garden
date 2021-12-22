@@ -1,3 +1,4 @@
+import { getPosts } from 'data/posts';
 import { formatISO } from 'date-fns';
 
 export default function Sitemap({}) {}
@@ -12,6 +13,8 @@ function url({ href, updatedAt, changeFrequency = 'monthly', priority = 0.5 }) {
 }
 
 export async function getServerSideProps({ res }) {
+  const posts = await getPosts();
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${url({ href: '/', updatedAt: '2021-11-19', changeFrequency: 'weekly', priority: 1 })}
@@ -23,6 +26,14 @@ export async function getServerSideProps({ res }) {
         priority: 1,
       })}
       ${url({ href: '/blog', updatedAt: '2021-11-19', changeFrequency: 'weekly', priority: 1 })}
+      ${posts.map((post) =>
+        url({
+          href: `/blog/${post.slug}`,
+          updatedAt: post.updated_at,
+          changeFrequency: 'monthly',
+          priority: 1,
+        })
+      )}
       ${url({
         href: '/resources',
         updatedAt: '2021-11-19',
