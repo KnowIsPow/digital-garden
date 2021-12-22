@@ -1,6 +1,4 @@
-import { articles } from 'data/blog';
 import { books } from 'data/books';
-import { BlogGrid } from 'features/blog/grid';
 import Page from 'features/page';
 import { BulletedList } from 'ui/content/bulleted-list';
 import Button from 'ui/form/button';
