@@ -51,14 +51,14 @@ const navigation = {
 export function Footer() {
   return (
     <footer className="bg-white border-t">
-      <div className="section py-12 flex flex-col md:flex-row justify-between flex-wrap gap-4 items-center">
+      <div className="content py-12 flex flex-col md:flex-row justify-between flex-wrap gap-4 items-center">
         <nav className="flex flex-wrap justify-center print:hidden space-x-4" aria-label="Footer">
           {navigation.main.map((link) => (
             <div key={link.label} className="py-2">
               <Link
                 key={link.label}
                 href={link.href}
-                className="body border-b-2 border-transparent hover:border-primary p-2 lowercase"
+                className="border-b-2 border-transparent hover:border-primary p-2 lowercase"
               >
                 {link.label}.
               </Link>
@@ -77,7 +77,7 @@ export function Footer() {
             </LinkExternal>
           ))}
         </div> */}
-        <p className="body lowercase">Made with ❤️ in Boston.</p>
+        <p className="lowercase">Made with ❤️ in Boston.</p>
       </div>
     </footer>
   );

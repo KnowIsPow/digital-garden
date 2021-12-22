@@ -2,57 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply font-medium font-mono;
+  }
+  h1 {
+    @apply display text-2xl lg:text-3xl;
+  }
+  h2 {
+    @apply display text-xl lg:text-2xl;
+  }
+  h3 {
+    @apply display text-lg lg:text-xl;
+  }
+  h4 {
+    @apply display text-lg lg:text-xl;
+  }
+  h5 {
+    @apply display text-lg lg:text-xl;
+  }
+  h6 {
+    @apply display text-lg lg:text-xl;
+  }
+}
+
 @layer components {
   /* Content Widths */
   .navigation {
     @apply px-4 sm:px-6 lg:px-14;
   }
 
-  .section {
-    @apply section-wide max-w-6xl;
+  .content {
+    @apply content-wide max-w-6xl;
   }
 
-  .section-wide {
+  .content-wide {
     @apply px-4 mx-auto sm:px-6 lg:px-8;
   }
 
   /* Typography */
-
-  .display-lg {
-    @apply text-xl md:text-2xl lg:text-3xl;
-  }
-
-  .display-md {
-    @apply text-lg md:text-xl lg:text-2xl;
-  }
-
-  .display-sm {
-    @apply text-base md:text-lg lg:text-xl;
-  }
-
   .display {
     @apply font-mono text-primary;
   }
 
-  .body {
-    @apply font-mono font-medium text-accent;
-  }
-
   /* Input */
   .input {
-    @apply inline-flex items-center w-full px-4 py-2 text-sm font-medium transition duration-200 bg-white border border-gray-300 rounded-sm shadow-sm hover:border-black focus:ring-indigo-500 focus:border-indigo-500;
+    @apply inline-flex items-center w-full px-4 py-2 text-sm font-medium transition duration-200 bg-white border border-gray-300 rounded-sm shadow-sm hover:bg-gray-50 focus:ring-primary focus:border-primary;
   }
 
   /* Buttons */
   .btn-primary {
-    @apply body text-white border border-transparent bg-primary hover:bg-opacity-90 focus:ring-blue-800;
+    @apply text-white border border-transparent bg-primary hover:bg-opacity-90 focus:ring-primary;
   }
 
   .btn-secondary {
-    @apply body bg-white border border-gray-300 hover:border-black focus:ring-gray-500 sm:text-sm;
+    @apply bg-white border border-gray-300 hover:border-primary focus:ring-gray-500 sm:text-sm;
   }
 
   .btn {
-    @apply inline-flex items-center px-4 py-2 text-sm font-medium transition duration-100 rounded-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 print:hidden;
+    @apply inline-flex items-center px-4 py-2 text-sm font-medium transition duration-100 rounded-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2;
   }
 }

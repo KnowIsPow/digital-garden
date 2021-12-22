@@ -12,16 +12,8 @@ export function TitleWithDescription({
 }) {
   return (
     <div className={classNames(center && 'text-center')}>
-      <Tag
-        id={anchor}
-        className={classNames(
-          'display',
-          Tag === 'h1' ? 'display-lg' : Tag === 'h2' ? 'display-md' : 'display-sm'
-        )}
-      >
-        {title}
-      </Tag>
-      <p className={classNames('body mt-2', wide ? 'max-w-4xl' : 'max-w-2xl', center && 'mx-auto')}>
+      <Tag id={anchor}>{title}</Tag>
+      <p className={classNames('mt-2', wide ? 'max-w-4xl' : 'max-w-2xl', center && 'mx-auto')}>
         {description}
       </p>
     </div>

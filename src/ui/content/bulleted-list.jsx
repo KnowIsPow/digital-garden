@@ -1,6 +1,6 @@
 export function BulletedList({ items }) {
   return (
-    <ul className="px-1 sm:px-4 py-4 space-y-1 body">
+    <ul className="px-1 sm:px-4 py-4 space-y-1">
       {items.map((item) => (
         <li key={item} className="flex gap-x-2">
           <svg

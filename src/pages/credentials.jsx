@@ -34,15 +34,15 @@ function WorkExperience({ experience }) {
   return (
     <div className="p-4 shadow bg-white">
       <div className="flex justify-between items-center flex-wrap">
-        <h2 className="display display-md">{experience.role}</h2>
-        <div className="body text-gray-400">
+        <h2>{experience.role}</h2>
+        <div className="text-gray-400">
           {experience.startDate} – {experience.endDate}
         </div>
       </div>
 
-      <div className="body display-sm">{experience.company}</div>
-      <div className="body text-gray-400">{experience.location}</div>
-      <p className="body mt-4">{experience.description}</p>
+      <div>{experience.company}</div>
+      <div className="text-gray-400">{experience.location}</div>
+      <p className="mt-4">{experience.description}</p>
       {experience.accomplishments && <BulletedList items={experience.accomplishments} />}
     </div>
   );

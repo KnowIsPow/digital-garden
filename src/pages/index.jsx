@@ -22,7 +22,7 @@ export default function IndexPage() {
             description="Welcome to my digital garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
           />
           <div className="mt-6">
-            <p className="body">Quick Links</p>
+            <p>Quick Links</p>
             <div className="flex gap-x-2 mt-2">
               <Link href="/about/#values">
                 <Button>Values</Button>
