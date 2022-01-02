@@ -35,7 +35,7 @@ export default function IndexPage() {
             {
               title: 'Experiences',
               href: '/credentials',
-              description: "The skills and wisdom I've aquired through work",
+              description: "The skills and wisdom I've acquired through work",
             },
             {
               title: 'Blog',
