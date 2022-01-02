@@ -14,23 +14,29 @@ export default function IndexPage() {
       canonical="/"
     >
       <Container>
-        <div className="pb-8 border-b">
+        <div>
           <TitleWithDescription
             title="Hiya, I'm Curtis!"
             description="Welcome to my digital garden 🌱 It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way."
           />
-          <div className="mt-6">
-            <p>Quick Links</p>
-            <div className="flex gap-x-2 mt-2">
-              <Link href="/about/#values">
-                <Button>Values</Button>
-              </Link>
-              <Link href="/about/#goals">
-                <Button>Goals</Button>
-              </Link>
-            </div>
-          </div>
         </div>
+        <section className="grid gap-6 py-6 lg:grid-cols-3">
+          {[
+            { title: 'Values', href: '/about/#values' },
+            { title: 'Goals', href: '/about/#goals' },
+            { title: 'Experiences', href: '/credentials' },
+            { title: 'Blog', href: '/blog' },
+            { title: 'Books', href: '/resources' },
+            { title: 'Contact', href: '/contact' },
+          ].map(({ title, href }) => {
+            return (
+              <Link href={href} className="p-3 duration-300 border hover:border-primary">
+                <div className="font-semibold text-primary">{title}</div>
+                <p>This is just a test of a description</p>
+              </Link>
+            );
+          })}
+        </section>
         <div className="mt-6">
           <TitleWithDescription
             title="Book Recommendations"
