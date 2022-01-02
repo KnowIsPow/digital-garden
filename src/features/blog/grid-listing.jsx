@@ -6,11 +6,11 @@ export function BlogGridListing({ post }) {
   return (
     <Link
       href={'/blog/' + post.slug}
-      className="shadow border border-transparent hover:border-black"
+      className="border border-transparent shadow hover:border-black"
     >
       <article>
-        <div className="flex-shrink-0">
-          <Image className="h-48 w-full object-cover" src={post.feature_image} alt={''} />
+        <div className="relative flex-shrink-0 w-full h-48">
+          <Image className="object-cover" src={post.feature_image} alt={''} />
         </div>
         <div className="p-4 space-y-2">
           <h2 className="text-lg">{post.title}</h2>
