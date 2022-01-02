@@ -10,7 +10,7 @@ export function BlogGridListing({ post }) {
     >
       <article>
         <div className="relative flex-shrink-0 w-full h-48">
-          <Image className="object-cover" src={post.feature_image} alt={''} />
+          <Image className="object-cover" src={post.feature_image} alt={post.title} priority />
         </div>
         <div className="p-4 space-y-2">
           <h2 className="text-lg">{post.title}</h2>
