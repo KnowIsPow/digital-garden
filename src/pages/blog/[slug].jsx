@@ -1,8 +1,9 @@
 import { getPosts, getSinglePost } from 'data/posts';
 import Page from 'features/page';
 import { ImageHeader } from 'ui/header/image-header';
-import { TitleWithDescription } from 'ui/header/title-with-description';
 import { Container } from 'ui/layout/container';
+import SocialSharingIcons from 'features/social-sharing';
+import Link from 'ui/link';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -33,12 +34,14 @@ export async function getStaticProps(context) {
 }
 
 export default function PostPage({ post }) {
+  const metaTitle = post.meta_title || post.title;
+  const metaDescription =
+    post.meta_description || post.excerpt.slice(0, 150).replace(/(\n)/gm, ' ') + '...';
+
   return (
     <Page
-      title={post.meta_title || post.title}
-      description={
-        post.meta_description || post.excerpt.slice(0, 150).replace(/(\n)/gm, ' ') + '...'
-      }
+      title={metaTitle}
+      description={metaDescription}
       canonical={'/blog/' + post.slug}
       previewImage={post.feature_image}
     >
@@ -63,10 +66,28 @@ export default function PostPage({ post }) {
         </div>
       </ImageHeader>
       <Container>
-        <article
-          className="mx-auto prose prose-blue"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <div className="flex flex-col gap-8 md:flex-row">
+          <article
+            className="mx-auto prose prose-blue"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+          <div className="md:w-1/4 md:block">
+            <div className="sticky space-y-4 top-5">
+              <SocialSharingIcons
+                imageUrl={post.featured_image}
+                url={`${process.env.NEXT_PUBLIC_HOST}/blog/${post.slug}`}
+                title={`Read ${post.title} from Curtis Fisher in ${post.reading_time}`}
+                summary={metaDescription}
+              />
+              <p className="font-light">
+                Interested in contacting Curtis Fisher?{' '}
+                <Link href="/contact" className="underline hover:text-primary">
+                  Start a conversation
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
       </Container>
     </Page>
   );
