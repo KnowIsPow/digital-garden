@@ -35,8 +35,10 @@ export async function getStaticProps(context) {
 export default function PostPage({ post }) {
   return (
     <Page
-      title={post.meta_title}
-      description={post.meta_description}
+      title={post.meta_title || post.title}
+      description={
+        post.meta_description || post.excerpt.slice(0, 150).replace(/(\n)/gm, ' ') + '...'
+      }
       canonical={'/blog/' + post.slug}
       previewImage={post.feature_image}
     >
@@ -45,9 +47,9 @@ export default function PostPage({ post }) {
         imageAlt={post.title}
         overlayBg="bg-gradient-to-b from-transparent to-black opacity-80"
       >
-        <div className="relative py-24 sm:py-32 content text-center">
+        <div className="relative py-24 text-center sm:py-32 content">
           <h1 className="text-white">{post.title}</h1>
-          <div className="mt-2 flex space-x-1 text-lg text-gray-200 justify-center">
+          <div className="flex justify-center mt-2 space-x-1 text-lg text-gray-200">
             <time dateTime={post.published_at}>
               {Intl.DateTimeFormat('en-US', {
                 year: 'numeric',
@@ -62,7 +64,7 @@ export default function PostPage({ post }) {
       </ImageHeader>
       <Container>
         <article
-          className="prose prose-blue mx-auto"
+          className="mx-auto prose prose-blue"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </Container>
