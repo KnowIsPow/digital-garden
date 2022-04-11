@@ -74,7 +74,7 @@ export default function PostPage({ post }) {
           <div className="md:w-1/4 md:block">
             <div className="sticky space-y-4 top-5">
               <SocialSharingIcons
-                imageUrl={post.featured_image}
+                imageUrl={post.feature_image}
                 url={`${process.env.NEXT_PUBLIC_HOST}/blog/${post.slug}`}
                 title={`Read ${post.title} from Curtis Fisher in ${post.reading_time}`}
                 summary={metaDescription}
