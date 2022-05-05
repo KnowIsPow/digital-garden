@@ -1,5 +1,34 @@
 export const workExperience = [
   {
+    role: 'President',
+    company: 'TAMID - Northeastern Chapter',
+    startDate: 'Dec 2021',
+    endDate: 'Present',
+    location: 'Greater Boston Area',
+    description: `Responsible for all internal and external affairs.`,
+    accomplishments: [
+      'Strategize long-term vision for the organization.',
+      'Host monthly organization meetings for 100+ attendees.',
+      'Lead an executive board of 14 members to ensure executive alignment and execution across committees.',
+      'Execute on strategic campaigns and inspire human resource capacity to do so.',
+      'Lead by example and without depending on formal authority.',
+    ],
+  },
+  {
+    role: 'VP of Marketing',
+    company: 'TAMID - Northeastern Chapter',
+    startDate: 'May 2021',
+    endDate: 'Dec 2021',
+    location: 'Greater Boston Area',
+    description: `Responsible for internal and external brand communications.`,
+    accomplishments: [
+      'Develop marketing strategy for internal and external efforts.',
+      'Lead a committee of seven to execute marketing strategy.',
+      'Delegate deliverables to appropriate committee members.',
+      'Create meaningful opportunities for engagement and ownership to keep committee members excited about work.',
+    ],
+  },
+  {
     role: 'Founder & Real Estate Treasure Hunter',
     company: 'GrowthSuite',
     startDate: 'Oct 2019',
