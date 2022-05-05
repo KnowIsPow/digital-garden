@@ -44,6 +44,8 @@ export default function Page({
           />
         )}
         {previewImage && <meta property="og:image" content={previewImage} key="ogimage" />}
+        {previewImage && <meta property="og:image" content={previewImage} key="ogimage" />}
+
         {siteName && <meta property="og:site_name" content={siteName} key="ogsitename" />}
         {title && <meta property="og:title" content={title} key="ogtitle" />}
         {description && <meta property="og:description" content={description} key="ogdesc" />}

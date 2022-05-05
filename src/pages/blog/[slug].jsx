@@ -4,6 +4,7 @@ import { ImageHeader } from 'ui/header/image-header';
 import { Container } from 'ui/layout/container';
 import SocialSharingIcons from 'features/social-sharing';
 import Link from 'ui/link';
+import { BlogGrid } from 'features/blog/grid';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -21,6 +22,7 @@ export async function getStaticPaths() {
 // In turn passing it to the posts.read() to query the Ghost Content API
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug);
+  const otherPosts = (await getPosts()).filter((otherPost) => otherPost.slug !== post.slug);
 
   if (!post) {
     return {
@@ -29,11 +31,11 @@ export async function getStaticProps(context) {
   }
 
   return {
-    props: { post },
+    props: { post, otherPosts },
   };
 }
 
-export default function PostPage({ post }) {
+export default function PostPage({ post, otherPosts }) {
   const metaTitle = post.meta_title || post.title;
   const metaDescription =
     post.meta_description || post.excerpt.slice(0, 150).replace(/(\n)/gm, ' ') + '...';
@@ -67,11 +69,17 @@ export default function PostPage({ post }) {
       </ImageHeader>
       <Container>
         <div className="flex flex-col gap-8 md:flex-row">
-          <article
-            className="mx-auto prose prose-blue"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          <div className="md:w-1/4 md:block">
+          <div className="space-y-6">
+            <article
+              className="max-w-4xl pb-6 prose border-b prose-h2:text-primary"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+            <div className="space-y-4">
+              <h2>Further Reading</h2>
+              <BlogGrid posts={otherPosts.slice(0, 3)} />
+            </div>
+          </div>
+          <div className="flex-shrink-0 md:w-1/4 md:block">
             <div className="sticky space-y-4 top-5">
               <SocialSharingIcons
                 imageUrl={post.feature_image}
