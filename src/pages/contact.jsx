@@ -14,7 +14,7 @@ export default function ContactPage({}) {
   return (
     <Page
       title="Contact"
-      description="Looking to get in touch with Curtis Fisher? Whether you have a new project idea, are looking for resources, or want to stay in touch, don't hesitate to reach out!"
+      description="Whether you have a new project idea, are looking for resources, or want to stay in touch, don't hesitate to reach out!"
       canonical="/contact"
     >
       <Container>
@@ -83,7 +83,7 @@ export default function ContactPage({}) {
               </p>
 
               <div className="sm:col-span-2">
-                <Button type="submit" className="w-full justify-center btn-primary lowercase">
+                <Button type="submit" className="justify-center w-full lowercase btn-primary">
                   Let's talk
                 </Button>
               </div>
@@ -99,7 +99,7 @@ function SVGDots({}) {
   return (
     <>
       <svg
-        className="absolute left-full transform translate-x-1/2"
+        className="absolute transform translate-x-1/2 left-full"
         width={404}
         height={404}
         fill="none"
@@ -121,7 +121,7 @@ function SVGDots({}) {
         <rect width={404} height={404} fill="url(#85737c0e-0916-41d7-917f-596dc7edfa27)" />
       </svg>
       <svg
-        className="absolute right-full bottom-0 transform -translate-x-1/2"
+        className="absolute bottom-0 transform -translate-x-1/2 right-full"
         width={404}
         height={404}
         fill="none"
