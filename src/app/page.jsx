@@ -1,10 +1,14 @@
 import { books } from '@/data/books';
 import { experiences } from '@/data/experiences';
 import { values } from '@/data/values';
+import { getArticles } from '@/functions/markdown';
+import { format } from 'date-fns';
 
 import Link from 'next/link';
 
-export default function Home() {
+export default async function Home() {
+  const articles = await getArticles();
+
   return (
     <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
       <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
@@ -22,33 +26,32 @@ export default function Home() {
             Recent Articles
           </h2>
           <div className="space-y-12">
-            {posts.map((post) => (
-              <article key={post.id} className="flex flex-col items-start justify-between max-w-xl">
-                <div className="flex items-center text-xs gap-x-4">
-                  <time dateTime={post.datetime} className="text-gray-500">
-                    {post.date}
-                  </time>
-                  <div className="text-gray-500">{post.readingTime} Minute Read</div>
-                  <Link
-                    href={post.category.href}
-                    className="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100"
-                  >
-                    {post.category.title}
-                  </Link>
-                </div>
-                <div className="relative group">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <Link href={post.href}>
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </Link>
-                  </h3>
-                  <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
-                    {post.description}
-                  </p>
-                </div>
-              </article>
-            ))}
+            {articles
+              .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
+              .slice(0, 3)
+              .map((article) => (
+                <article
+                  key={article.title}
+                  className="flex flex-col items-start justify-between max-w-xl"
+                >
+                  <div className="flex items-center text-xs gap-x-4">
+                    <time dateTime={article.meta.date} className="text-gray-500">
+                      {format(new Date(article.meta.date), 'MMMM dd, yyyy')}
+                    </time>
+                  </div>
+                  <div className="relative group">
+                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                      <Link href={`/blog/${article.meta.slug}`}>
+                        <span className="absolute inset-0" />
+                        {article.meta.title}
+                      </Link>
+                    </h3>
+                    <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
+                      {article.meta.description}
+                    </p>
+                  </div>
+                </article>
+              ))}
           </div>
         </div>
         <div>
