@@ -1,8 +1,9 @@
+import { ArticleCard } from '@/components/article-card';
+import { ArticleTime } from '@/components/article-time';
 import { books } from '@/data/books';
 import { experiences } from '@/data/experiences';
 import { values } from '@/data/values';
 import { getArticles } from '@/functions/markdown';
-import { format } from 'date-fns';
 
 import Link from 'next/link';
 
@@ -12,7 +13,7 @@ export default async function Home() {
   return (
     <div className="max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
       <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
+        <h1 className="text-4xl font-bold tracking-tight text-blue-700 lowercase sm:text-6xl">
           Hiya, I&apos;m Curtis Fisher 👋
         </h1>
         <p className="mt-6 text-lg leading-8 text-gray-700">
@@ -22,42 +23,29 @@ export default async function Home() {
       </header>
       <section className="space-y-16">
         <div>
-          <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Recent Articles
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-blue-700 lowercase sm:text-4xl">
+            Recent Articles.
           </h2>
+          <p className="mt-2 mb-6 text-gray-700">A special place for my thoughts and opinions.</p>
           <div className="space-y-12">
             {articles
               .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
               .slice(0, 3)
               .map((article) => (
-                <article
-                  key={article.title}
-                  className="flex flex-col items-start justify-between max-w-xl"
-                >
-                  <div className="flex items-center text-xs gap-x-4">
-                    <time dateTime={article.meta.date} className="text-gray-500">
-                      {format(new Date(article.meta.date), 'MMMM dd, yyyy')}
-                    </time>
-                  </div>
-                  <div className="relative group">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                      <Link href={`/blog/${article.meta.slug}`}>
-                        <span className="absolute inset-0" />
-                        {article.meta.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3">
-                      {article.meta.description}
-                    </p>
-                  </div>
-                </article>
+                <ArticleCard article={article} key={article.meta.title} />
               ))}
+            <div className="text-blue-400 hover:underline">
+              <Link href="/blog">View More Blog Articles</Link>
+            </div>
           </div>
         </div>
         <div>
-          <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Values
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-blue-700 lowercase sm:text-4xl">
+            Values.
           </h2>
+          <p className="mt-2 mb-6 text-gray-700">
+            These are fundamental to who I am and serve to guide my decison making.
+          </p>
           <ul className="space-y-2">
             {values.map((value) => (
               <li key={value}>✅ {value}</li>
@@ -65,23 +53,29 @@ export default async function Home() {
           </ul>
         </div>
         <div>
-          <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Book Recommendations
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-blue-700 lowercase sm:text-4xl">
+            Book Recommendations.
           </h2>
+          <p className="mt-2 mb-6 text-gray-700">
+            A selection of the best five books I&apos;ve read.
+          </p>
           <ul className="space-y-2">
             {books
               .sort((a, b) => b.score - a.score)
               .map((book) => <li key={book.title}>{`${book.title} – ⭐ ${book.score}`}</li>)
               .slice(0, 5)}
           </ul>
-          <div className="mt-4 text-blue-400 hover:underline">
+          <div className="mt-12 text-blue-400 hover:underline">
             <Link href="/books">View More Book Recommendations</Link>
           </div>
         </div>
         <div>
-          <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Recent Projects & Experiences
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-blue-700 lowercase sm:text-4xl">
+            Recent Projects & Experiences.
           </h2>
+          <p className="mt-2 mb-6 text-gray-700">
+            The skills and wisdom I&apos;ve aquired through work.
+          </p>
           <ul className="space-y-2">
             {experiences.slice(0, 5).map((experience) => (
               <li key={experiences.role + experiences.startDate + experiences.endDate}>
