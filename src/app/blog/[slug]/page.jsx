@@ -8,6 +8,11 @@ export async function generateMetadata({ params }) {
   return {
     title: article.meta.metaTitle || article.meta.title,
     description: article.meta.description,
+    openGraph: {
+      title: article.meta.metaTitle || article.meta.title,
+      description: article.meta.description,
+      url: `https://www.curtisfisher.com/blog/${params.slug}`,
+    },
   };
 }
 

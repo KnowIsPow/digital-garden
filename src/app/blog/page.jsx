@@ -1,9 +1,17 @@
 import { ArticleCard } from '@/components/article-card';
-import { ArticleTime } from '@/components/article-time';
 import { BackToMainPage } from '@/components/back-button';
 import { getArticles } from '@/functions/markdown';
-import { format } from 'date-fns';
-import Link from 'next/link';
+
+export const metadata = {
+  title: 'Blog',
+  description: 'A selection of writings and resources that I&apos;ve accumulated along my journey.',
+  openGraph: {
+    title: 'Blog - Curtis Fisher',
+    description:
+      'A selection of writings and resources that I&apos;ve accumulated along my journey.',
+    url: 'https://www.curtisfisher.com/blog',
+  },
+};
 
 export default async function BlogPage({ params }) {
   const articles = await getArticles(params.slug);

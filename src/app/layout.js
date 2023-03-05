@@ -1,9 +1,30 @@
 import './globals.css';
 
 export const metadata = {
-  title: 'Curtis Fisher',
+  title: {
+    default: 'Curtis Fisher',
+    template: '%s | Curtis Fisher',
+  },
   description:
     "Welcome to my digital garden It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way.",
+  openGraph: {
+    title: 'Curtis Fisher',
+    description:
+      "Welcome to my digital garden It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way.",
+    url: 'https://www.curtisfisher.com',
+    siteName: 'Curtis Fisher - Digital Garden',
+    locale: 'en-US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Curtis Fisher - Digital Garden',
+    description:
+      "Welcome to my digital garden It's all about growing excitement, learning tech, and sharing the resources and lessons I've discovered along the way.",
+    creator: '@curtiscandid',
+  },
+  creator: 'Curtis Fisher',
+  publisher: 'Curtis Fisher',
 };
 
 export default function RootLayout({ children }) {

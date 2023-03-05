@@ -4,7 +4,6 @@ import { books } from '@/data/books';
 import { experiences } from '@/data/experiences';
 import { values } from '@/data/values';
 import { getArticles } from '@/functions/markdown';
-
 import Link from 'next/link';
 
 export default async function Home() {

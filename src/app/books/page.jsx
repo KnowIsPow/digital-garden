@@ -1,6 +1,18 @@
 import { BackToMainPage } from '@/components/back-button';
 import { books } from '@/data/books';
 
+export const metadata = {
+  title: 'Book Recommendations',
+  description:
+    "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
+  openGraph: {
+    title: 'Book Recommendations - Curtis Fisher',
+    description:
+      "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
+    url: 'https://www.curtisfisher.com/books',
+  },
+};
+
 export default async function BooksPage() {
   return (
     <>
