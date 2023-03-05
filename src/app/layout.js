@@ -25,6 +25,21 @@ export const metadata = {
   },
   creator: 'Curtis Fisher',
   publisher: 'Curtis Fisher',
+  icons: {
+    icon: [
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    shortcut: '/shortcut-icon.png',
+    apple: [{ url: '/apple-touch-icon.png', sizes: '152x152', type: 'image/png' }],
+    other: {
+      rel: 'mask-icon',
+      url: '/safari-pinned-tab.svg',
+      color: '#1d4ed8',
+    },
+  },
+  manifest: '/site.webmanifest',
+  themeColor: 'white',
 };
 
 export default function RootLayout({ children }) {
