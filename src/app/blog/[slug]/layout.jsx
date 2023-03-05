@@ -8,11 +8,11 @@ export default async function ArticleLayout({ children }) {
   return (
     <div className="relative max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
       {children}
-      <div className="pt-16 mt-16 border-t border-gray-200">
-        <h2 className="mb-6 text-3xl font-bold tracking-tight text-gray-900 text-blue-700 lowercase sm:text-4xl">
+      <div className="pt-16 mt-16 border-t border-gray-200 group/recent">
+        <h2 className="mb-6 text-3xl font-bold tracking-tight text-blue-700 lowercase duration-200 sm:text-4xl opacity-60 group-hover/recent:opacity-100">
           Recent Articles.
         </h2>
-        <div className="space-y-12">
+        <div className="space-y-12 duration-100 opacity-60 group-hover/recent:opacity-100">
           {articles
             .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
             .slice(0, 3)
