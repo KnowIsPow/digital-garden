@@ -1,6 +1,6 @@
 import { ArticleCard } from '@/components/article-card';
 import { books } from '@/data/books';
-import { experiences } from '@/data/credentials';
+import { credentials } from '@/data/credentials';
 import { values } from '@/data/values';
 import { getArticles } from '@/functions/markdown';
 import Link from 'next/link';
@@ -25,7 +25,7 @@ export default async function Home() {
           <Link className="text-blue-500 hover:underline" href="/books">
             Books.
           </Link>
-          <Link className="text-blue-500 hover:underline" href="#">
+          <Link className="text-blue-500 hover:underline" href="/credentials">
             Credentials.
           </Link>
           <Link className="text-blue-500 hover:underline" href="/contact">
@@ -89,12 +89,15 @@ export default async function Home() {
             The skills and wisdom I&apos;ve aquired through work.
           </p>
           <ul className="ml-4 space-y-2">
-            {experiences.slice(0, 5).map((experience) => (
-              <li key={experiences.role + experiences.startDate + experiences.endDate}>
-                {experience.role} – {experience.company}
+            {credentials.slice(0, 5).map((credential) => (
+              <li key={credential.role + credential.startDate + credential.endDate}>
+                {credential.role} <span className="text-gray-500">@ {credential.company}</span>
               </li>
             ))}
           </ul>
+          <div className="mt-12 text-blue-500 hover:underline">
+            <Link href="/credentials">View Full Credentials</Link>
+          </div>
         </div>
       </section>
     </div>
