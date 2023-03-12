@@ -23,18 +23,19 @@ export default async function CredentialsPage() {
         <h1 className="mb-4 text-2xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
           Credentials.
         </h1>
-        <p className="text-gray-500 mb-12">
+        <p className="text-gray-500">
           It&apos;s important to consider the believability of resources. I&apos;m going to share a
           lot of resources and experiences on this website, but I&apos;m not an expert on everything
           shared. This page serves to highlight which resources are backed by experience, and which
           are my own opinion and should be taken with a grain of salt.
         </p>
-        <ul className="space-y-12">
-          {credentials.map((credential) => (
-            <Credential key={credential.company + credential.endDate} credential={credential} />
-          ))}
-        </ul>
       </header>
+
+      <ul className="space-y-12">
+        {credentials.map((credential) => (
+          <Credential key={credential.company + credential.endDate} credential={credential} />
+        ))}
+      </ul>
     </>
   );
 }
