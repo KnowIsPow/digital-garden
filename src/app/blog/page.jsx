@@ -17,7 +17,7 @@ export default async function BlogPage({ params }) {
   const articles = await getArticles(params.slug);
 
   return (
-    <div className="relative max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
+    <div className="relative py-32 sm:py-48 lg:py-56">
       <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
         <div className="mb-6">
           <BackToMainPage />

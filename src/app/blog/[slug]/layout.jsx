@@ -6,7 +6,7 @@ export default async function ArticleLayout({ children }) {
   const articles = await getArticles();
 
   return (
-    <div className="relative max-w-2xl py-32 mx-auto sm:py-48 lg:py-56">
+    <div className="relative py-32 sm:py-48 lg:py-56">
       {children}
       <div className="pt-16 mt-16 border-t border-gray-200 group/recent">
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-blue-700 lowercase duration-200 sm:text-4xl opacity-60 group-hover/recent:opacity-100">

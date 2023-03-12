@@ -34,7 +34,7 @@ export default async function ArticlePage({ params }) {
         </h1>
         <ArticleTime date={meta.date} />
       </header>
-      <article className="max-w-2xl px-0 mx-auto prose md:prose-lg">{content}</article>
+      <article className="max-w-full px-0 prose md:prose-lg">{content}</article>
     </>
   );
 }
