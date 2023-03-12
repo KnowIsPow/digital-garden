@@ -1,6 +1,6 @@
 import { ArticleCard } from '@/components/article-card';
 import { books } from '@/data/books';
-import { experiences } from '@/data/experiences';
+import { experiences } from '@/data/credentials';
 import { values } from '@/data/values';
 import { getArticles } from '@/functions/markdown';
 import Link from 'next/link';
@@ -18,18 +18,18 @@ export default async function Home() {
           Welcome to my digital garden 🌱 It&apos;s all about growing excitement, learning tech, and
           sharing the resources and lessons I&apos;ve discovered along the way.
         </p>
-        <div className="flex mt-6 gap-x-4">
-          <Link className="text-blue-900 underline" href="/blog">
-            Blog
+        <div className="flex mt-6 gap-x-4 text-lg lowercase">
+          <Link className="text-blue-500 hover:underline" href="/blog">
+            Blog.
           </Link>
-          <Link className="text-blue-900 underline" href="/books">
-            Books
+          <Link className="text-blue-500 hover:underline" href="/books">
+            Books.
           </Link>
-          <Link className="text-blue-900 underline" href="#">
-            Experiences
+          <Link className="text-blue-500 hover:underline" href="#">
+            Credentials.
           </Link>
-          <Link className="text-blue-900 underline" href="#">
-            Contact
+          <Link className="text-blue-500 hover:underline" href="/contact">
+            Contact.
           </Link>
         </div>
       </header>
@@ -46,7 +46,7 @@ export default async function Home() {
               .map((article) => (
                 <ArticleCard article={article} key={article.meta.title} />
               ))}
-            <div className="text-blue-400 hover:underline">
+            <div className="text-blue-500 hover:underline">
               <Link href="/blog">View More Blog Articles</Link>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default async function Home() {
               .map((book) => <li key={book.title}>{`${book.title} – ⭐ ${book.score}`}</li>)
               .slice(0, 5)}
           </ul>
-          <div className="mt-12 text-blue-400 hover:underline">
+          <div className="mt-12 text-blue-500 hover:underline">
             <Link href="/books">View More Book Recommendations</Link>
           </div>
         </div>

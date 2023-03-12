@@ -1,4 +1,4 @@
-export const experiences = [
+export const credentials = [
   {
     role: 'President',
     company: 'TAMID - Northeastern Chapter',
