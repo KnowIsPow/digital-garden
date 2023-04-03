@@ -2,7 +2,7 @@ import { ArticleCard } from '@/components/article-card';
 import { getArticles } from '@/functions/markdown';
 import Link from 'next/link';
 
-export default async function ArticleLayout({ children }) {
+export default async function ArticleLayout({ params, children }) {
   const articles = await getArticles();
 
   return (
@@ -14,6 +14,7 @@ export default async function ArticleLayout({ children }) {
         </h2>
         <div className="space-y-12 duration-100 opacity-60 group-hover/recent:opacity-100">
           {articles
+            .filter((article) => article.meta.slug !== params.slug)
             .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
             .slice(0, 3)
             .map((article) => (

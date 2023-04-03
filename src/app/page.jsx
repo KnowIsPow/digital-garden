@@ -18,7 +18,7 @@ export default async function Home() {
           Welcome to my digital garden 🌱 It&apos;s all about growing excitement, learning tech, and
           sharing the resources and lessons I&apos;ve discovered along the way.
         </p>
-        <div className="flex mt-6 gap-x-4 text-lg lowercase">
+        <div className="flex mt-6 text-lg lowercase gap-x-4">
           <Link className="text-blue-500 hover:underline" href="/blog">
             Blog.
           </Link>
