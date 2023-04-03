@@ -13,7 +13,7 @@ export const books = [
   { title: 'As a Man Thinketh', score: 9, keyTakeaway: 'Find inner peace and happiness.' },
   {
     title: 'Extreme Ownership',
-    score: 9,
+    score: 8.5,
     keyTakeaway: 'Improve your life by taking accountability for everything in it.',
   },
   {
@@ -55,6 +55,11 @@ export const books = [
     score: 8,
     keyTakeaway: 'Endure life with an awesome sense of purpose.',
   },
+  {
+    title: 'The Second Mountain',
+    score: 7.5,
+    keyTakeaway: 'Live a life of commitment in relationship to others.',
+  },
   { title: 'Think Like A Monk', score: 7, keyTakeaway: 'A reflection of the monk lifestyle.' },
   { title: '12 Rules for Life', score: 7, keyTakeaway: 'As the title says.' },
   {
@@ -95,10 +100,19 @@ export const books = [
   { title: 'The 7 Habits of Highly Effective People', score: 6, keyTakeaway: '' },
   { title: 'Stillness Is the Key', score: 6, keyTakeaway: '' },
   { title: 'The Surrender Experiment', score: 6, keyTakeaway: '' },
-  { title: 'The Prince', score: 6, keyTakeaway: '' },
+  { title: 'The Prince', score: 6, keyTakeaway: 'A guide for action in a political environment.' },
   { title: 'Principles', score: 6, keyTakeaway: '' },
-  { title: 'The State of Affairs', score: 6, keyTakeaway: '' },
-  { title: 'Crucial Conversations', score: 6, keyTakeaway: '' },
+  {
+    title: 'The State of Affairs',
+    score: 6,
+    keyTakeaway: 'Processing infidelity within a relationship.',
+  },
+  {
+    title: 'Crucial Conversations',
+    score: 6,
+    keyTakeaway:
+      'Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.',
+  },
   { title: 'Ego Is The Enemy', score: 6, keyTakeaway: '' },
   { title: 'Rich Dad Poor Dad', score: 5, keyTakeaway: '' },
   { title: 'The Effective Executive', score: 5, keyTakeaway: '' },
