@@ -60,6 +60,11 @@ export const books = [
     score: 7.5,
     keyTakeaway: 'Live a life of commitment in relationship to others.',
   },
+  {
+    title: 'When Breath Becomes Air',
+    score: 7.5,
+    keyTakeaway: 'A true story about a man who faced death with integrity. This book made me cry.',
+  },
   { title: 'Think Like A Monk', score: 7, keyTakeaway: 'A reflection of the monk lifestyle.' },
   { title: '12 Rules for Life', score: 7, keyTakeaway: 'As the title says.' },
   {
