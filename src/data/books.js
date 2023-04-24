@@ -73,6 +73,18 @@ export const books = [
     keyTakeaway: 'Reflect on the components of your character.',
   },
   {
+    title: 'How Will You Measure Your Life?',
+    score: 7,
+    keyTakeaway:
+      'Thoughtfully consider what you most value in life and embody those values within your career, personal life, and family dynamics.',
+  },
+  {
+    title: 'Excellent Sheep',
+    score: 7,
+    keyTakeaway:
+      'The elite educational system has created a generation of individuals who do things not because they are virtuous, but because they are necessary (and this is bad because we think critically about ourselves and our values less often).',
+  },
+  {
     title: 'Influence: Science and Practice',
     score: 7,
     keyTakeaway: 'Learn how to market to anyone.',
@@ -119,6 +131,13 @@ export const books = [
       'Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.',
   },
   { title: 'Ego Is The Enemy', score: 6, keyTakeaway: '' },
+  {
+    title: 'The Way of the Superior Man',
+    score: 6,
+    keyTakeaway:
+      'Lean into life with love and passionatly pursue your ultimate purpose at all costs.',
+  },
+
   { title: 'Rich Dad Poor Dad', score: 5, keyTakeaway: '' },
   { title: 'The Effective Executive', score: 5, keyTakeaway: '' },
   { title: "You're a Badass at Making Money", score: 5, keyTakeaway: '' },
