@@ -1,17 +1,20 @@
-import { ArticleTime } from '@/components/article-time';
-import { BackToMainPage } from '@/components/back-button';
-import { getArticle } from '@/functions/markdown';
-import { notFound } from 'next/navigation';
+import { ArticleTime } from "@/components/article-time";
+import { BackToMainPage } from "@/components/back-button";
+import { getArticle } from "@/functions/markdown";
+import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
   const article = await getArticle(params.slug);
   return {
     title: article.meta.metaTitle || article.meta.title,
     description: article.meta.description,
+    alternates: {
+      canonical: `/${params.slug}`,
+    },
     openGraph: {
       title: article.meta.metaTitle || article.meta.title,
       description: article.meta.description,
-      url: `https://www.curtisfisher.com/blog/${params.slug}`,
+      url: `/${params.slug}`,
     },
   };
 }
