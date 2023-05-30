@@ -6,7 +6,7 @@ import { getArticles } from "@/functions/markdown";
 import Link from "next/link";
 
 export const metadata = {
-  title: "My Digital Garden",
+  title: "My Digital Garden - Curtis Fisher",
 };
 
 export default async function Home() {
