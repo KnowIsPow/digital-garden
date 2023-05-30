@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
     title: article.meta.metaTitle || article.meta.title,
     description: article.meta.description,
     alternates: {
-      canonical: `/${params.slug}`,
+      canonical: `/blog/${params.slug}`,
     },
     openGraph: {
       title: article.meta.metaTitle || article.meta.title,
