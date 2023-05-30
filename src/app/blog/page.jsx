@@ -1,15 +1,16 @@
-import { ArticleCard } from '@/components/article-card';
-import { BackToMainPage } from '@/components/back-button';
-import { getArticles } from '@/functions/markdown';
+import { ArticleCard } from "@/components/article-card";
+import { BackToMainPage } from "@/components/back-button";
+import { getArticles } from "@/functions/markdown";
 
 export const metadata = {
-  title: 'Blog',
-  description: 'A selection of writings and resources that I&apos;ve accumulated along my journey.',
+  title: "A Collection of Thoughts and Ideas",
+  description:
+    "A selection of writings and resources that I&apos;ve accumulated along my journey.",
   openGraph: {
-    title: 'Blog - Curtis Fisher',
+    title: "A Collection of Thoughts and Ideas - Curtis Fisher",
     description:
-      'A selection of writings and resources that I&apos;ve accumulated along my journey.',
-    url: 'https://www.curtisfisher.com/blog',
+      "A selection of writings and resources that I&apos;ve accumulated along my journey.",
+    url: "https://www.curtisfisher.com/blog",
   },
 };
 
@@ -26,7 +27,8 @@ export default async function BlogPage({ params }) {
           Blog.
         </h1>
         <p className="text-gray-500">
-          A selection of writings and resources that I&apos;ve accumulated along my journey.
+          A selection of writings and resources that I&apos;ve accumulated along
+          my journey.
         </p>
       </header>
       <div className="space-y-12">

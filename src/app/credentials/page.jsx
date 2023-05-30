@@ -1,15 +1,15 @@
-import { BackToMainPage } from '@/components/back-button';
-import { credentials } from '@/data/credentials';
+import { BackToMainPage } from "@/components/back-button";
+import { credentials } from "@/data/credentials";
 
 export const metadata = {
-  title: 'Experiences',
+  title: "My Credentials & Experiences",
   description:
-    'This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt.',
+    "This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt.",
   openGraph: {
-    title: 'Experiences - Curtis Fisher',
+    title: "My Credentials & Experiences - Curtis Fisher",
     description:
-      'This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt.',
-    url: 'https://www.curtisfisher.com/experiences',
+      "This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt.",
+    url: "https://www.curtisfisher.com/experiences",
   },
 };
 
@@ -24,16 +24,20 @@ export default async function CredentialsPage() {
           Credentials.
         </h1>
         <p className="text-gray-500">
-          It&apos;s important to consider the believability of resources. I&apos;m going to share a
-          lot of resources and experiences on this website, but I&apos;m not an expert on everything
-          shared. This page serves to highlight which resources are backed by experience, and which
-          are my own opinion and should be taken with a grain of salt.
+          It&apos;s important to consider the believability of resources.
+          I&apos;m going to share a lot of resources and experiences on this
+          website, but I&apos;m not an expert on everything shared. This page
+          serves to highlight which resources are backed by experience, and
+          which are my own opinion and should be taken with a grain of salt.
         </p>
       </header>
 
       <ul className="space-y-12">
         {credentials.map((credential) => (
-          <Credential key={credential.company + credential.endDate} credential={credential} />
+          <Credential
+            key={credential.company + credential.endDate}
+            credential={credential}
+          />
         ))}
       </ul>
     </>
@@ -44,7 +48,8 @@ function Credential({ credential }) {
   return (
     <div>
       <h2 className="text-blue-700 text-lg">
-        {credential.role} <span className="text-gray-500">@ {credential.company}</span>
+        {credential.role}{" "}
+        <span className="text-gray-500">@ {credential.company}</span>
       </h2>
       <p className="text-gray-500">
         {credential.startDate} - {credential.endDate}

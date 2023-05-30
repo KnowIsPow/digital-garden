@@ -1,12 +1,14 @@
-import { BackToMainPage } from '@/components/back-button';
+import { BackToMainPage } from "@/components/back-button";
 
 export const metadata = {
-  title: 'Contact',
-  description: "I love getting to know new people and hearing your stories. Let's chat!",
+  title: "Get In Touch",
+  description:
+    "I love getting to know new people and hearing your stories. Let's chat!",
   openGraph: {
-    title: 'Contact - Curtis Fisher',
-    description: "I love getting to know new people and hearing your stories. Let's chat!",
-    url: 'https://www.curtisfisher.com/contact',
+    title: "Get In Touch - Curtis Fisher",
+    description:
+      "I love getting to know new people and hearing your stories. Let's chat!",
+    url: "https://www.curtisfisher.com/contact",
   },
 };
 
@@ -21,10 +23,14 @@ export default async function ContactPage() {
           Contact curtis.
         </h1>
         <p className="text-gray-500 mb-12">
-          I love meeting and learning about new people around the world. No need to ask a question.
-          Tell me where you are and what you&apos;re working on. I reply to all.
+          I love meeting and learning about new people around the world. No need
+          to ask a question. Tell me where you are and what you&apos;re working
+          on. I reply to all.
         </p>
-        <a className="text-blue-400 hover:underlin" href="mailto:me@curtisfisher.com">
+        <a
+          className="text-blue-400 hover:underlin"
+          href="mailto:me@curtisfisher.com"
+        >
           me@curtisfisher.com
         </a>
       </header>
