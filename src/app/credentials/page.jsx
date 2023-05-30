@@ -11,6 +11,9 @@ export const metadata = {
       "This page serves to highlight which resources are backed by experience, and which are my own opinion and should be taken with a grain of salt.",
     url: "https://www.curtisfisher.com/experiences",
   },
+  alternates: {
+    canonical: `/credentials`,
+  },
 };
 
 export default async function CredentialsPage() {

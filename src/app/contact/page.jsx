@@ -10,6 +10,9 @@ export const metadata = {
       "I love getting to know new people and hearing your stories. Let's chat!",
     url: "https://www.curtisfisher.com/contact",
   },
+  alternates: {
+    canonical: `/contact`,
+  },
 };
 
 export default async function ContactPage() {

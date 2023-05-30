@@ -7,6 +7,9 @@ import Link from "next/link";
 
 export const metadata = {
   title: "My Digital Garden - Curtis Fisher",
+  alternates: {
+    canonical: `/`,
+  },
 };
 
 export default async function Home() {

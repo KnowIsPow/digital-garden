@@ -1,15 +1,18 @@
-import { BackToMainPage } from '@/components/back-button';
-import { books } from '@/data/books';
+import { BackToMainPage } from "@/components/back-button";
+import { books } from "@/data/books";
 
 export const metadata = {
-  title: 'Book Recommendations',
+  title: "Book Recommendations",
   description:
     "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
   openGraph: {
-    title: 'Book Recommendations - Curtis Fisher',
+    title: "Book Recommendations - Curtis Fisher",
     description:
       "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
-    url: 'https://www.curtisfisher.com/books',
+    url: "https://www.curtisfisher.com/books",
+  },
+  alternates: {
+    canonical: `/books`,
   },
 };
 
@@ -24,8 +27,9 @@ export default async function BooksPage() {
           Book Recommendations.
         </h1>
         <p className="text-gray-500">
-          A carefully curated (and priority ordered) selection of my top book recommendations.
-          It&apos;s a short list for now, but soon I&apos;ll add summaries for each of them.
+          A carefully curated (and priority ordered) selection of my top book
+          recommendations. It&apos;s a short list for now, but soon I&apos;ll
+          add summaries for each of them.
         </p>
       </header>
 

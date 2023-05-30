@@ -12,6 +12,9 @@ export const metadata = {
       "A selection of writings and resources that I&apos;ve accumulated along my journey.",
     url: "https://www.curtisfisher.com/blog",
   },
+  alternates: {
+    canonical: `/blog`,
+  },
 };
 
 export default async function BlogPage({ params }) {
