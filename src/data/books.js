@@ -12,7 +12,7 @@ export const books = [
   },
   {
     title: "Man's Search for Meaning",
-    score: 9,
+    score: 10,
     keyTakeaway: "Endure life with an awesome sense of purpose.",
   },
   {
@@ -20,11 +20,40 @@ export const books = [
     score: 9,
     keyTakeaway: "Find inner peace and happiness.",
   },
+  { title: "Four Agreements", score: 9, keyTakeaway: "Find inner peace." },
+  {
+    title: "The Alchemist",
+    score: 8.5,
+    keyTakeaway:
+      "A story about manifesting your personal legend (ultimate purpose) through persistence.",
+  },
+  {
+    title: "Mastery of Love",
+    score: 8.5,
+    keyTakeaway: "Overcome emotional wounds and practice love for the world.",
+  },
+  {
+    title: "The Power of Vulnerability",
+    score: 8.5,
+    keyTakeaway:
+      "Lean into vulnerability and release yourself from a lifetime of shame and suffering.",
+  },
   {
     title: "Extreme Ownership",
     score: 8.5,
     keyTakeaway:
       "Improve your life by taking accountability for everything in it.",
+  },
+  {
+    title: "Can't Hurt Me",
+    score: 8.5,
+    keyTakeaway:
+      "There are many mental limits that hold us back. When we push past these, the outcomes can be incredible.",
+  },
+  {
+    title: "Siddhartha",
+    score: 8,
+    keyTakeaway: "A story of suffering and the path to nirvana.",
   },
   {
     title: "How to Make Friends & Influence People",
@@ -43,45 +72,10 @@ export const books = [
     keyTakeaway: "A modern take on ancient stoicism.",
   },
   { title: "Sapiens", score: 8, keyTakeaway: "The history of humanity." },
-  { title: "Rework", score: 6, keyTakeaway: "" },
-  {
-    title: "The Alchemist",
-    score: 8,
-    keyTakeaway: "A story about finding your personal legend.",
-  },
-  {
-    title: "Siddhartha",
-    score: 8,
-    keyTakeaway: "A story of suffering and the path to nirvana.",
-  },
-  {
-    title: "Can't Hurt Me",
-    score: 8.5,
-    keyTakeaway:
-      "There are many mental limits that hold us back. When we push past these, the outcomes can be incredible.",
-  },
-  { title: "Four Agreements", score: 8.5, keyTakeaway: "Find inner peace." },
-  {
-    title: "Mastery of Love",
-    score: 8.5,
-    keyTakeaway: "Practive wordly love.",
-  },
-  {
-    title: "The Power of Vulnerability",
-    score: 8.5,
-    keyTakeaway:
-      "Lean into vulnerability and release yourself from a lifetime of shame and suffering.",
-  },
   {
     title: "The Enchiridion",
     score: 8,
     keyTakeaway: "A summary of the stoic teachings of Epictetus.",
-  },
-  {
-    title: "Discourses of Epictetus",
-    score: 8,
-    keyTakeaway:
-      "Learn about stoicism and how it can help you become a better human.",
   },
   {
     title: "The Second Mountain",
@@ -113,6 +107,18 @@ export const books = [
       "A beautiful story about life, meaning, and life's trivialities.",
   },
   {
+    title: "Discourses of Epictetus",
+    score: 7,
+    keyTakeaway:
+      "Learn about stoicism and how it can help you become a better human.",
+  },
+  {
+    title: "Excellent Sheep",
+    score: 7,
+    keyTakeaway:
+      "The elite educational system has created a generation of individuals who do things not because they are virtuous, but because they are necessary (and this is bad because we think critically about ourselves and our values less often).",
+  },
+  {
     title: "Cultivating an Unshakeable Character",
     score: 7,
     keyTakeaway: "Reflect on the components of your character.",
@@ -122,12 +128,6 @@ export const books = [
     score: 7,
     keyTakeaway:
       "Thoughtfully consider what you most value in life and embody those values within your career, personal life, and family dynamics.",
-  },
-  {
-    title: "Excellent Sheep",
-    score: 7,
-    keyTakeaway:
-      "The elite educational system has created a generation of individuals who do things not because they are virtuous, but because they are necessary (and this is bad because we think critically about ourselves and our values less often).",
   },
   {
     title: "The E-Myth: Revisited",
@@ -152,15 +152,12 @@ export const books = [
     keyTakeaway: "Learn about human mating behaviors.",
   },
   {
-    title: "Purple Cow",
-    score: 6,
-    keyTakeaway: "An essential guide to value-driven marketing.",
+    title: "Crucial Conversations",
+    score: 6.5,
+    keyTakeaway:
+      "Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.",
   },
-  {
-    title: "The Lean Startup",
-    score: 6,
-    keyTakeaway: "Learn how to run a startup in the modern age.",
-  },
+  { title: "Principles", score: 6.5, keyTakeaway: "" },
   {
     title: "Never Split The Difference",
     score: 6,
@@ -174,6 +171,17 @@ export const books = [
       "A collection of ancient war reflections that you can apply to your modern life.",
   },
   { title: "The 4 Hour Work Week", score: 6, keyTakeaway: "" },
+  { title: "Rework", score: 6, keyTakeaway: "" },
+  {
+    title: "Purple Cow",
+    score: 6,
+    keyTakeaway: "An essential guide to value-driven marketing.",
+  },
+  {
+    title: "The Lean Startup",
+    score: 6,
+    keyTakeaway: "Learn how to run a startup in the modern age.",
+  },
   { title: "High Performance Habits", score: 6, keyTakeaway: "" },
   {
     title: "The 7 Habits of Highly Effective People",
@@ -187,17 +195,10 @@ export const books = [
     score: 6,
     keyTakeaway: "A guide for action in a political environment.",
   },
-  { title: "Principles", score: 6, keyTakeaway: "" },
   {
     title: "The State of Affairs",
     score: 6,
     keyTakeaway: "Processing infidelity within a relationship.",
-  },
-  {
-    title: "Crucial Conversations",
-    score: 6,
-    keyTakeaway:
-      "Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.",
   },
   { title: "Ego Is The Enemy", score: 6, keyTakeaway: "" },
   {

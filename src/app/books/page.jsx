@@ -28,8 +28,12 @@ export default async function BooksPage() {
         </h1>
         <p className="text-gray-500">
           A carefully curated (and priority ordered) selection of my top book
-          recommendations. It&apos;s a short list for now, but soon I&apos;ll
-          add summaries for each of them.
+          recommendations. Note that these scores are (currently) based on
+          current impressions of the book. At certain times, some of these books
+          had a profound impact on my thinking. I aim to read books when they
+          are most needed. The books at the top of this list tend to apply to
+          everyday situations, while the books near the bottom tend to be more
+          niche (or they're outright not amazing).
         </p>
       </header>
 
