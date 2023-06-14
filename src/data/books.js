@@ -95,6 +95,12 @@ export const books = [
       "A true story about a man who faced death with integrity. This book made me cry.",
   },
   {
+    title: "Think and Grow Rich",
+    score: 7.5,
+    keyTakeaway:
+      "You can achieve whatever it is that you DESIRE if you have faith in your ability to achieve it and persistence in your execution of the DESIRE.",
+  },
+  {
     title: "Think Like A Monk",
     score: 7,
     keyTakeaway: "A reflection of the monk lifestyle.",
