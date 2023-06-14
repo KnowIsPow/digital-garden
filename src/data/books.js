@@ -205,7 +205,7 @@ export const books = [
     title: "The Way of the Superior Man",
     score: 6,
     keyTakeaway:
-      "Lean into life with love and passionatly pursue your ultimate purpose at all costs.",
+      "Lean into life with love and passionately pursue your ultimate purpose at all costs.",
   },
 
   { title: "Rich Dad Poor Dad", score: 5, keyTakeaway: "" },
