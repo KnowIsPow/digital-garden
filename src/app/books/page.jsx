@@ -4,11 +4,11 @@ import { books } from "@/data/books";
 export const metadata = {
   title: "Book Recommendations",
   description:
-    "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
+    "A priority ordered list of the books I&apos;ve read to date. Note that these scores are based on what current Curtis thinks of the books.",
   openGraph: {
     title: "Book Recommendations - Curtis Fisher",
     description:
-      "A carefully curated (and priority ordered) selection of my top book recommendations. It's a short list for now, but soon I'll add summaries for each of them.",
+      "A priority ordered list of the books I&apos;ve read to date. Note that these scores are based on what current Curtis thinks of the books.",
     url: "https://www.curtisfisher.com/books",
   },
   alternates: {
@@ -27,13 +27,13 @@ export default async function BooksPage() {
           Book Recommendations.
         </h1>
         <p className="text-gray-500">
-          A carefully curated (and priority ordered) selection of my top book
-          recommendations. Note that these scores are (currently) based on
-          current impressions of the book. At certain times, some of these books
-          had a profound impact on my thinking. I aim to read books when they
-          are most needed. The books at the top of this list tend to apply to
-          everyday situations, while the books near the bottom tend to be more
-          niche (or they're outright not amazing).
+          A priority ordered list of the books I&apos;ve read to date. Note that
+          these scores are based on what current Curtis thinks of the books. At
+          certain times, some of these books had a profound impact on my
+          thinking and past Curtis may have ranked them higher for the role they
+          served. The books at the top of this list tend to apply to everyday
+          situations, while the books near the bottom tend to scratch specific
+          itches (or they&apos;re outright not amazing).
         </p>
       </header>
 
