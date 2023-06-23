@@ -33,6 +33,9 @@ export default async function Home() {
           <Link className="text-blue-500 hover:underline" href="/books">
             Books.
           </Link>
+          <Link className="text-blue-500 hover:underline" href="/projects">
+            Projects.
+          </Link>
           <Link className="text-blue-500 hover:underline" href="/credentials">
             Credentials.
           </Link>

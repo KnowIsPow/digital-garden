@@ -1,6 +1,6 @@
-import { BackToMainPage } from '@/components/back-button';
+import { BackToMainPage } from "@/components/back-button";
 
-export default async function BookLayout({ children }) {
+export default async function SubPageLayout({ children }) {
   return (
     <div className="relative py-32 sm:py-48 lg:py-56">
       {children}
