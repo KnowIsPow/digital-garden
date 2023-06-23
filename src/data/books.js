@@ -130,6 +130,11 @@ export const books = [
       "Thoughtfully consider what you most value in life and embody those values within your career, personal life, and family dynamics.",
   },
   {
+    title: "Essentialism",
+    score: 7,
+    keyTakeaway: "Do less, but better.",
+  },
+  {
     title: "The E-Myth: Revisited",
     score: 7,
     keyTakeaway:
@@ -158,6 +163,12 @@ export const books = [
       "Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.",
   },
   { title: "Principles", score: 6.5, keyTakeaway: "" },
+  {
+    title: "Zero to One",
+    score: 6.5,
+    keyTakeaway:
+      "Successful startups create NEW things which add significant value. When you create new things, you have no (or far less) competition.",
+  },
   {
     title: "Never Split The Difference",
     score: 6,
