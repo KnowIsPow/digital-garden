@@ -211,7 +211,12 @@ export const books = [
     score: 6,
     keyTakeaway: "Processing infidelity within a relationship.",
   },
-  { title: "Ego Is The Enemy", score: 6, keyTakeaway: "" },
+  {
+    title: "Ego Is The Enemy",
+    score: 6,
+    keyTakeaway:
+      "Set aside your ego to find greater actualization of your ideal life.",
+  },
   {
     title: "The Way of the Superior Man",
     score: 6,
@@ -221,11 +226,28 @@ export const books = [
 
   { title: "Rich Dad Poor Dad", score: 5, keyTakeaway: "" },
   { title: "The Effective Executive", score: 5, keyTakeaway: "" },
-  { title: "You're a Badass at Making Money", score: 5, keyTakeaway: "" },
-  { title: "The Great Mental Models", score: 5, keyTakeaway: "" },
-  { title: "Models (Mark Manson)", score: 5, keyTakeaway: "" },
+  {
+    title: "You're a Badass at Making Money",
+    score: 5,
+    keyTakeaway: "Manifest what you want and you will get it.",
+  },
+  {
+    title: "The Great Mental Models",
+    score: 5,
+    keyTakeaway: "A set of frameworks for thinking about the world.",
+  },
+  {
+    title: "Models (Mark Manson)",
+    score: 5,
+    keyTakeaway: "A guide ton no-bullshit, zero game-playing, authentic dating",
+  },
   { title: "The $100 Startup", score: 4, keyTakeaway: "" },
   { title: "Unfu*k Yourself", score: 4, keyTakeaway: "" },
   { title: "The Go-Giver", score: 4, keyTakeaway: "" },
-  { title: "Start With Why", score: 3, keyTakeaway: "" },
+  {
+    title: "Start With Why",
+    score: 3,
+    keyTakeaway:
+      "This book is game changing for a lot of people. For me, I got the point after the first chapter. Perhaps it deserves a reread.",
+  },
 ];
