@@ -49,7 +49,7 @@ export default async function CredentialsPage() {
 
 function Credential({ credential }) {
   return (
-    <div>
+    <li>
       <h2 className="text-blue-700 text-lg">
         {credential.role}{" "}
         <span className="text-gray-500">@ {credential.company}</span>
@@ -65,6 +65,6 @@ function Credential({ credential }) {
           ))}
         </ul>
       )}
-    </div>
+    </li>
   );
 }

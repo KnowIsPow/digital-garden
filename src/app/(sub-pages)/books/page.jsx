@@ -4,11 +4,11 @@ import { books } from "@/data/books";
 export const metadata = {
   title: "Book Recommendations",
   description:
-    "A priority ordered list of the books I&apos;ve read to date. Note that these scores are based on what current Curtis thinks of the books.",
+    "A priority ordered list of the books I've read to date. Note that these scores are based on what current Curtis thinks of the books.",
   openGraph: {
     title: "Book Recommendations - Curtis Fisher",
     description:
-      "A priority ordered list of the books I&apos;ve read to date. Note that these scores are based on what current Curtis thinks of the books.",
+      "A priority ordered list of the books I've read to date. Note that these scores are based on what current Curtis thinks of the books.",
     url: "https://www.curtisfisher.com/books",
   },
   alternates: {
