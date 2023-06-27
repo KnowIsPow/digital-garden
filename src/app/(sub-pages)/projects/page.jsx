@@ -59,6 +59,7 @@ function Project({ project }) {
           className="w-auto h-12 mb-4"
           width={250}
           height={250}
+          alt={project.name}
         />
       )}
       <p className="text-gray-500">Started {project.startDate}</p>
