@@ -36,7 +36,7 @@ export default async function ProjectsPage() {
         </p>
       </header>
 
-      <ul className="space-y-12">
+      <ul className="space-y-8">
         {projects.map((project) => (
           <Project key={project.name} project={project} />
         ))}
@@ -47,7 +47,7 @@ export default async function ProjectsPage() {
 
 function Project({ project }) {
   return (
-    <li>
+    <li className="border p-8">
       <h2
         className={`text-blue-700 text-lg ${project.previewImage && "hidden"}`}
       >
