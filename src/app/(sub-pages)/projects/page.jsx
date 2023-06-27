@@ -31,8 +31,8 @@ export default async function ProjectsPage() {
         </h1>
         <p className="text-gray-500">
           Public accountability is a great motivator. As I develop this page
-          (and these projects) out, I aim to provide candid reflection of how
-          well I&apos;m executing against my goals.
+          (and these projects), I aim to provide candid reflection of how well
+          I&apos;m executing against my goals.
         </p>
       </header>
 
