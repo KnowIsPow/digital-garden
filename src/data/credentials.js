@@ -16,7 +16,7 @@ export const credentials = [
     role: "President",
     company: "TAMID - Northeastern Chapter",
     startDate: "Dec 2021",
-    endDate: "Present",
+    endDate: "June 2023",
     location: "Greater Boston Area",
     description: `Responsible for overseeing the executive board and developing future leadership.`,
     accomplishments: [
