@@ -26,7 +26,7 @@ export default async function Home() {
           excitement, learning tech, and sharing the resources and lessons
           I&apos;ve discovered along the way.
         </p>
-        <div className="flex mt-6 text-lg lowercase gap-x-4">
+        <div className="flex mt-6 text-lg lowercase gap-x-4 sm:flex-row flex-col">
           <Link className="text-blue-500 hover:underline" href="/blog">
             Blog.
           </Link>
