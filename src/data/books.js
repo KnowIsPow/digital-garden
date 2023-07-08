@@ -119,6 +119,12 @@ export const books = [
       "The elite educational system has created a generation of individuals who do things not because they are virtuous, but because they are necessary (and this is bad because we think critically about ourselves and our values less often).",
   },
   {
+    title: "Beyond Order",
+    score: 7,
+    keyTakeaway:
+      "A thoughtful reflection of timeless human patterns distilled into a collection of rules to live by.",
+  },
+  {
     title: "Cultivating an Unshakeable Character",
     score: 7,
     keyTakeaway: "Reflect on the components of your character.",
@@ -128,6 +134,12 @@ export const books = [
     score: 7,
     keyTakeaway:
       "Thoughtfully consider what you most value in life and embody those values within your career, personal life, and family dynamics.",
+  },
+  {
+    title: "Kaftka On The Shore",
+    score: 7,
+    keyTakeaway:
+      "The closest you will get to conciously dreaming... This book is a deep dive into the subconscious.",
   },
   {
     title: "Essentialism",
@@ -192,6 +204,11 @@ export const books = [
     title: "The Lean Startup",
     score: 6,
     keyTakeaway: "Learn how to run a startup in the modern age.",
+  },
+  {
+    title: "Taming the Tiger Within",
+    score: 6,
+    keyTakeaway: "A zen buddhist guide for translating fear into love.",
   },
   { title: "High Performance Habits", score: 6, keyTakeaway: "" },
   {
