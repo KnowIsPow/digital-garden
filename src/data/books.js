@@ -83,10 +83,22 @@ export const books = [
     keyTakeaway: "Live a life of commitment in relationship to others.",
   },
   {
+    title: "The 15 Commitments of Conscious Leadership",
+    score: 7.5,
+    keyTakeaway:
+      "Be truly self-honest with how well you are leading, and open yourself to the possibility of improvement through conscious commitment to it.",
+  },
+  {
     title: "When Breath Becomes Air",
     score: 7.5,
     keyTakeaway:
       "A true story about a man who faced death with integrity. This book made me cry.",
+  },
+  {
+    title: "The Bhagavad Gita",
+    score: 7.5,
+    keyTakeaway:
+      "The Hindu reflection of a good life. Lot's of wisdom to be gleaned from it.",
   },
   {
     title: "Think and Grow Rich",
@@ -175,6 +187,12 @@ export const books = [
       "Practicing empathy, minimizing negative storytelling, and becoming an effective communicator.",
   },
   { title: "Principles", score: 6.5, keyTakeaway: "" },
+  {
+    title: "How to Be Perfect",
+    score: 6.5,
+    keyTakeaway:
+      "A modern (and funny) reflection of moral philosophy. Would be rated higher if it was less opininated/politically charged.",
+  },
   {
     title: "Zero to One",
     score: 6.5,
