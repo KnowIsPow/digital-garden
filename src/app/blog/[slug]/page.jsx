@@ -35,7 +35,10 @@ export default async function ArticlePage({ params }) {
         <h1 className="mb-4 text-2xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
           {meta.title}
         </h1>
-        <ArticleTime date={meta.date} />
+        <p>
+          <ArticleTime date={meta.date} /> -{" "}
+          <span className="text-gray-500">{meta.readingTime} Minute Read</span>
+        </p>
       </header>
       <article className="max-w-full px-0 prose md:prose-lg">{content}</article>
     </>

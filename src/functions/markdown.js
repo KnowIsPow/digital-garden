@@ -1,19 +1,20 @@
-import { readFileSync, existsSync } from 'fs';
-import { globSync } from 'glob';
-import { compileMDX } from 'next-mdx-remote/rsc';
-import path from 'path';
+import { readFileSync, existsSync } from "fs";
+import { globSync } from "glob";
+import { compileMDX } from "next-mdx-remote/rsc";
+import path from "path";
+import readingTime from "reading-time";
 
 // POSTS_PATH is useful when you want to get the path to a specific file
-const POSTS_PATH = path.join(process.cwd(), 'src/posts');
+const POSTS_PATH = path.join(process.cwd(), "src/posts");
 
 // get a list of article slugs
 export function getSlugs() {
   const paths = globSync(`${POSTS_PATH}/*.mdx`);
 
   return paths.map((path) => {
-    const parts = path.split('/');
+    const parts = path.split("/");
     const fileName = parts[parts.length - 1];
-    const [slug, _ext] = fileName.split('.');
+    const [slug, _ext] = fileName.split(".");
     return slug;
   });
 }
@@ -32,9 +33,18 @@ export async function getArticle(slug) {
     options: { parseFrontmatter: true },
   });
 
-  return { content, meta: { ...frontmatter, slug } };
+  return {
+    content,
+    meta: {
+      ...frontmatter,
+      slug,
+      readingTime: Math.ceil(readingTime(source).minutes),
+    },
+  };
 }
 
 export async function getArticles() {
-  return await Promise.all(getSlugs(POSTS_PATH).map(async (slug) => await getArticle(slug)));
+  return await Promise.all(
+    getSlugs(POSTS_PATH).map(async (slug) => await getArticle(slug))
+  );
 }
