@@ -45,6 +45,12 @@ export const books = [
       "Improve your life by taking accountability for everything in it.",
   },
   {
+    title: "Shoe Dog",
+    score: 8.5,
+    keyTakeaway:
+      "The story of Nike, and more abstractly, a vulnerable and captivating tale of launching a business.",
+  },
+  {
     title: "Can't Hurt Me",
     score: 8.5,
     keyTakeaway:
@@ -123,6 +129,11 @@ export const books = [
     score: 7,
     keyTakeaway:
       "Learn about stoicism and how it can help you become a better human.",
+  },
+  {
+    title: "The Richest Man in Babylon",
+    score: 7,
+    keyTakeaway: "A guide to accumulating wealth.",
   },
   {
     title: "Excellent Sheep",
