@@ -269,7 +269,17 @@ export const books = [
     keyTakeaway:
       "Lean into life with love and passionately pursue your ultimate purpose at all costs.",
   },
-
+  {
+    title: "The Third Door",
+    score: 6,
+    keyTakeaway:
+      "A story about the person power that comes with creating new options.",
+  },
+  {
+    title: "Lord of the Flies",
+    score: 5,
+    keyTakeaway: "Humanity devolved into apehood.",
+  },
   { title: "Rich Dad Poor Dad", score: 5, keyTakeaway: "" },
   { title: "The Effective Executive", score: 5, keyTakeaway: "" },
   {
