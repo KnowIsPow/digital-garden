@@ -24,7 +24,7 @@ export default async function BooksPage() {
         <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Book Recommendations.
         </h1>
-        <p className="text-green-100">
+        <p className="text-white/90">
           A priority ordered list of the books I&apos;ve read to date. Note that
           these scores are based on what current Curtis thinks of the books. At
           certain times, some of these books had a profound impact on my

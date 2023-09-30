@@ -10,7 +10,7 @@ export function Navbar() {
       <Link href="/">
         <div className="text-xl">Curtis Fisher.</div>
       </Link>
-      <nav className="flex text-lg lowercase gap-x-4">
+      <nav className="flex md:text-lg lowercase gap-x-4">
         {[
           { name: "Blog", href: "/blog" },
           { name: "Books", href: "/books" },

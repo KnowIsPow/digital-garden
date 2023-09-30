@@ -23,7 +23,7 @@ export default async function ContactPage() {
         <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Contact curtis.
         </h1>
-        <p className="text-red-100">
+        <p className="text-white/90">
           I love meeting and learning about new people around the world. No need
           to ask a question. Tell me where you are and what you&apos;re working
           on. I reply to all.

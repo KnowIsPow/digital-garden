@@ -28,7 +28,7 @@ export default async function ProjectsPage() {
         <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Ongoing Projects.
         </h1>
-        <p className="text-green-100">
+        <p className="text-white/90">
           Public accountability is a great motivator. As I develop this page
           (and these projects), I aim to provide candid reflection of how well
           I&apos;m executing against my goals.

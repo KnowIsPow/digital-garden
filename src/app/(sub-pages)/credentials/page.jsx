@@ -25,7 +25,7 @@ export default async function CredentialsPage() {
         <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Credentials.
         </h1>
-        <p className="text-gray-100">
+        <p className="text-white/90">
           It&apos;s important to consider the believability of resources.
           I&apos;m going to share a lot of resources and experiences on this
           website, but I&apos;m not an expert on everything shared. This page

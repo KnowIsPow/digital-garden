@@ -37,7 +37,7 @@ export default async function ArticlePage({ params }) {
         <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           {meta.title}
         </h1>
-        <p className="text-blue-100">
+        <p className="text-white/90">
           <ArticleTime date={meta.date} /> -{" "}
           <span className="opacity-70">{meta.readingTime} Minute Read</span>
         </p>
