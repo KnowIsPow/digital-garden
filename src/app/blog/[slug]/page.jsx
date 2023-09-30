@@ -1,5 +1,7 @@
 import { ArticleTime } from "@/components/article-time";
 import { BackToMainPage } from "@/components/back-button";
+import { Content } from "@/components/content";
+import { Header } from "@/components/header";
 import { getArticle } from "@/functions/markdown";
 import { notFound } from "next/navigation";
 
@@ -28,19 +30,23 @@ export default async function ArticlePage({ params }) {
 
   return (
     <>
-      <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
-        <div className="mb-6">
+      <Header color="blue">
+        <div className="mb-4 text-blue-400">
           <BackToMainPage />
         </div>
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           {meta.title}
         </h1>
-        <p>
+        <p className="text-blue-100">
           <ArticleTime date={meta.date} /> -{" "}
-          <span className="text-gray-500">{meta.readingTime} Minute Read</span>
+          <span className="opacity-70">{meta.readingTime} Minute Read</span>
         </p>
-      </header>
-      <article className="max-w-full px-0 prose md:prose-lg">{content}</article>
+      </Header>
+      <Content className="space-y-12">
+        <article className="max-w-full px-0 prose md:prose-lg">
+          {content}
+        </article>
+      </Content>
     </>
   );
 }

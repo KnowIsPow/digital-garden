@@ -1,12 +1,6 @@
 import { BackToMainPage } from "@/components/back-button";
+import { Content } from "@/components/content";
 
 export default async function SubPageLayout({ children }) {
-  return (
-    <div className="relative py-32 sm:py-48 lg:py-56">
-      {children}
-      <div className="mt-12">
-        <BackToMainPage />
-      </div>
-    </div>
-  );
+  return <div className="space-y-12">{children}</div>;
 }

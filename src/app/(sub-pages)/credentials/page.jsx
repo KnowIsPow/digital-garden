@@ -1,4 +1,6 @@
 import { BackToMainPage } from "@/components/back-button";
+import { Content } from "@/components/content";
+import { Header } from "@/components/header";
 import { credentials } from "@/data/credentials";
 
 export const metadata = {
@@ -19,30 +21,29 @@ export const metadata = {
 export default async function CredentialsPage() {
   return (
     <>
-      <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
-        <div className="mb-6">
-          <BackToMainPage />
-        </div>
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+      <Header color="black">
+        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Credentials.
         </h1>
-        <p className="text-gray-500">
+        <p className="text-gray-100">
           It&apos;s important to consider the believability of resources.
           I&apos;m going to share a lot of resources and experiences on this
           website, but I&apos;m not an expert on everything shared. This page
           serves to highlight which resources are backed by experience, and
           which are my own opinion and should be taken with a grain of salt.
         </p>
-      </header>
+      </Header>
 
-      <ul className="space-y-12">
-        {credentials.map((credential) => (
-          <Credential
-            key={credential.company + credential.endDate}
-            credential={credential}
-          />
-        ))}
-      </ul>
+      <Content>
+        <ul className="space-y-12">
+          {credentials.map((credential) => (
+            <Credential
+              key={credential.company + credential.endDate}
+              credential={credential}
+            />
+          ))}
+        </ul>
+      </Content>
     </>
   );
 }

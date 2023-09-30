@@ -1,4 +1,5 @@
 import { ArticleCard } from "@/components/article-card";
+import { Header } from "@/components/header";
 import { books } from "@/data/books";
 import { credentials } from "@/data/credentials";
 import { values } from "@/data/values";
@@ -16,46 +17,39 @@ export default async function Home() {
   const articles = await getArticles();
 
   return (
-    <div className="py-32 sm:py-48 lg:py-56">
-      <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
-        <h1 className="text-4xl font-bold tracking-tight text-blue-700 lowercase sm:text-6xl">
-          Hiya, I&apos;m <span className="block">Curtis Fisher 👋</span>
+    <div className="space-y-12">
+      <Header color="blue">
+        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          <span className="block text-blue-400 mb-4 text-xl font-medium">
+            Hiya, I&apos;m Curtis Fisher 👋
+          </span>
+          Passionate advocate for{" "}
+          <span className="text-green-300 border-b-2 hover:border-green-400 border-transparent duration-200">
+            ethical business
+          </span>
+          {", "}
+          <span className="text-red-300 border-b-2 hover:border-red-400 border-transparent duration-200">
+            compassionate relationships
+          </span>
+          , and{" "}
+          <span className="text-yellow-300 border-b-2 hover:border-yellow-400 border-transparent duration-200">
+            living well
+          </span>
+          .
         </h1>
-        <p className="mt-6 text-lg leading-8 text-gray-700">
-          Welcome to my digital garden 🌱 It&apos;s all about growing
-          excitement, learning tech, and sharing the resources and lessons
-          I&apos;ve discovered along the way.
-        </p>
-        <div className="flex mt-6 text-lg lowercase gap-x-4 sm:flex-row flex-col">
-          <Link className="text-blue-500 hover:underline" href="/blog">
-            Blog.
-          </Link>
-          <Link className="text-blue-500 hover:underline" href="/books">
-            Books.
-          </Link>
-          <Link className="text-blue-500 hover:underline" href="/projects">
-            Projects.
-          </Link>
-          <Link className="text-blue-500 hover:underline" href="/credentials">
-            Credentials.
-          </Link>
-          <Link className="text-blue-500 hover:underline" href="/contact">
-            Contact.
-          </Link>
-        </div>
-      </header>
-      <section className="space-y-16">
+      </Header>
+      <section className="space-y-16 mx-auto max-w-3xl px-6 lg:px-8">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
             Recent Articles.
           </h2>
           <p className="mt-2 mb-6 text-gray-700">
             A special place for my thoughts and opinions.
           </p>
-          <div className="space-y-12">
+          <div className="grid md:grid-cols-2 gap-6">
             {articles
               .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
-              .slice(0, 3)
+              .slice(0, 4)
               .map((article) => (
                 <ArticleCard article={article} key={article.meta.title} />
               ))}
@@ -65,7 +59,7 @@ export default async function Home() {
           </div>
         </div>
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
             Values.
           </h2>
           <p className="mt-2 mb-6 text-gray-700">
@@ -79,7 +73,7 @@ export default async function Home() {
           </ul>
         </div>
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
             Book Recommendations.
           </h2>
           <p className="mt-2 mb-6 text-gray-700">
@@ -98,7 +92,7 @@ export default async function Home() {
           </div>
         </div>
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
             Recent Projects & Experiences.
           </h2>
           <p className="mt-2 mb-6 text-gray-700">

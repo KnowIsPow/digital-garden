@@ -1,4 +1,6 @@
 import { BackToMainPage } from "@/components/back-button";
+import { Content } from "@/components/content";
+import { Header } from "@/components/header";
 import { books } from "@/data/books";
 import { projects } from "@/data/projects";
 import Image from "next/image";
@@ -22,25 +24,24 @@ export const metadata = {
 export default async function ProjectsPage() {
   return (
     <>
-      <header className="pb-10 mb-10 border-b border-gray-200 sm:mb-16 sm:pb-16">
-        <div className="mb-6">
-          <BackToMainPage />
-        </div>
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-blue-700 lowercase sm:text-4xl">
+      <Header color="pink">
+        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
           Ongoing Projects.
         </h1>
-        <p className="text-gray-500">
+        <p className="text-green-100">
           Public accountability is a great motivator. As I develop this page
           (and these projects), I aim to provide candid reflection of how well
           I&apos;m executing against my goals.
         </p>
-      </header>
+      </Header>
 
-      <ul className="space-y-8">
-        {projects.map((project) => (
-          <Project key={project.name} project={project} />
-        ))}
-      </ul>
+      <Content>
+        <ul className="space-y-8">
+          {projects.map((project) => (
+            <Project key={project.name} project={project} />
+          ))}
+        </ul>
+      </Content>
     </>
   );
 }
