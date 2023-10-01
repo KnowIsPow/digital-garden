@@ -1,10 +1,12 @@
 export const projects = [
   {
-    name: "Impact First Investments",
-    startDate: "May 2023",
-    description: `Building an impact-first, profit-second business incubator that deploys 10M in annual goodness-dollars through 10 businesses in 10 years (2033).`,
+    name: "Martha's Visit",
+    startDate: "May 2021",
+    description: `Vacation planning services for Martha's Vineyard.`,
+    href: "https://www.marthasvisit.com/",
+    previewImage: "/images/projects/marthasvisit.svg",
     objectives: [
-      "Pioneer a model for impact-first, profit-second business incubation.",
+      "Become the go-to vacation planning website for Martha's Vineyard tourists.",
     ],
   },
   {
@@ -29,13 +31,11 @@ export const projects = [
     ],
   },
   {
-    name: "Martha's Visit",
-    startDate: "May 2021",
-    description: `Vacation planning services for Martha's Vineyard.`,
-    href: "https://www.marthasvisit.com/",
-    previewImage: "/images/projects/marthasvisit.svg",
+    name: "Impact First Investments",
+    startDate: "May 2023",
+    description: `Building an impact-first, profit-second business incubator that deploys 10M in annual goodness-dollars through 10 businesses in 10 years (2033).`,
     objectives: [
-      "Become the go-to vacation planning website for Martha's Vineyard tourists.",
+      "Pioneer a model for impact-first, profit-second business incubation.",
     ],
   },
 ];
