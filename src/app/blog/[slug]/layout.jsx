@@ -23,7 +23,7 @@ export default async function ArticleLayout({ params, children }) {
             ))}
         </div>
         <div className="mt-12 text-lg text-gray-400 lowercase hover:underline">
-          <Link href="/">Back To Main Page</Link>
+          <Link href="/blog">Back To Main Page</Link>
         </div>
       </Content>
     </div>
