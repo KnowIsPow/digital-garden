@@ -21,7 +21,7 @@ export async function GET() {
       description: article.meta.description,
       url: `${SITE_URL}/blog/${article.meta.slug}`,
       guid: `${SITE_URL}/blog/${article.meta.slug}`,
-      date: article.meta.updatedAt,
+      date: new Date(article.meta.date),
     });
   });
 
