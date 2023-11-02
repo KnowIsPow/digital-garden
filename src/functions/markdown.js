@@ -3,6 +3,7 @@ import { globSync } from "glob";
 import { compileMDX } from "next-mdx-remote/rsc";
 import path from "path";
 import readingTime from "reading-time";
+import { markdownComponents } from "@/components/snippets/markdown-components";
 
 // POSTS_PATH is useful when you want to get the path to a specific file
 const POSTS_PATH = path.join(process.cwd(), "src/posts");
@@ -31,6 +32,10 @@ export async function getArticle(slug) {
   const { content, frontmatter } = await compileMDX({
     source,
     options: { parseFrontmatter: true },
+    components: {
+      ...markdownComponents,
+      NotProse: ({ children }) => <div className="not-prose">{children}</div>,
+    },
   });
 
   return {
