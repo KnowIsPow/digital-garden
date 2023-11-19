@@ -9,6 +9,22 @@ export default async function ArticleLayout({ params, children }) {
   return (
     <div className="space-y-12">
       {children}
+      <Content>
+        <iframe
+          src="https://embeds.beehiiv.com/426e1d3a-3fd0-4367-ad7e-c2711f9938f7"
+          data-test-id="beehiiv-embed"
+          width="100%"
+          height={320}
+          frameBorder={0}
+          scrolling="no"
+          style={{
+            borderRadius: 4,
+            border: "2px solid #e5e7eb",
+            margin: 0,
+            backgroundColor: "transparent",
+          }}
+        />
+      </Content>
       <Content className="pt-12 border-t border-gray-200 group/recent">
         <h2 className="mb-6 text-3xl font-bold tracking-tight text-blue-700 lowercase duration-200 sm:text-4xl sm:opacity-60 group-hover/recent:opacity-100">
           Recent Articles.
