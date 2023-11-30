@@ -192,6 +192,12 @@ export const books = [
     keyTakeaway: "Learn about human mating behaviors.",
   },
   {
+    title: "101 Essays That Will Change the Way You Thin",
+    score: 6.5,
+    keyTakeaway:
+      "This book covers a wide range of topics... it inspires me to write more.",
+  },
+  {
     title: "Crucial Conversations",
     score: 6.5,
     keyTakeaway:
