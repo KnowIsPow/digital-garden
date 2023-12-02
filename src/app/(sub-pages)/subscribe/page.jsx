@@ -1,6 +1,5 @@
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
-import { books } from "@/data/books";
 
 export const metadata = {
   title: "Subscribe",
