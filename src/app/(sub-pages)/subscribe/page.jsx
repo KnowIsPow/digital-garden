@@ -5,15 +5,15 @@ import { books } from "@/data/books";
 export const metadata = {
   title: "Subscribe",
   description:
-    "A priority ordered list of the books I've read to date. Note that these scores are based on what current Curtis thinks of the books.",
+    "Get monthly updates on the latest insights and projects. Each month features a new article and a fresh project. Interested in staying informed? Subscribe here for regular updates.",
   openGraph: {
-    title: "Book Recommendations - Curtis Fisher",
+    title: "Subscribe - Curtis Fisher",
     description:
-      "A priority ordered list of the books I've read to date. Note that these scores are based on what current Curtis thinks of the books.",
-    url: "https://www.curtisfisher.com/books",
+      "Get monthly updates on the latest insights and projects. Each month features a new article and a fresh project. Interested in staying informed? Subscribe here for regular updates.",
+    url: "https://www.curtisfisher.com/subscribe",
   },
   alternates: {
-    canonical: `/books`,
+    canonical: `/subscribe`,
   },
 };
 
