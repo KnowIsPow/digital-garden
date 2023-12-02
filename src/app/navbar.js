@@ -14,7 +14,6 @@ export function Navbar() {
         {[
           { name: "Blog", href: "/blog" },
           { name: "Books", href: "/books" },
-          { name: "Projects", href: "/projects" },
           { name: "Credentials", href: "/credentials" },
           { name: "Contact", href: "/contact" },
         ].map(({ name, href }) => (
