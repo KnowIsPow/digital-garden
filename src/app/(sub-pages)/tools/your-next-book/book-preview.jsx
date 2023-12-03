@@ -15,6 +15,7 @@ export function BookPreview({ book, reason }) {
                 book.imageLinks?.smallThumbnail ||
                 "https://dummyimage.com/134x201/f1f1f1/000000.png&text=No+Image"
               }
+              className="object-cover"
             />
           </div>
         }
@@ -24,9 +25,11 @@ export function BookPreview({ book, reason }) {
               <h3 className="text-sm font-medium text-gray-900">
                 {book.title}
               </h3>
-              <p className="mt-1 text-sm text-gray-500">
-                {book.authors.join(", ")}
-              </p>
+              {book.authors && (
+                <p className="mt-1 text-sm text-gray-500">
+                  {book.authors.join(", ")}
+                </p>
+              )}
               {book.categories && (
                 <p className="mt-4 text-sm text-gray-500">
                   {book.categories.join(", ")}
@@ -38,23 +41,27 @@ export function BookPreview({ book, reason }) {
                 {book.averageRating}
                 <span className="sr-only"> out of 5 stars</span>
               </p>
-              <div className="ml-1 flex items-center">
-                {[0, 1, 2, 3, 4].map((rating) => (
-                  <StarIcon
-                    key={rating}
-                    className={classNames(
-                      book.averageRating > rating
-                        ? "text-yellow-400"
-                        : "text-gray-200",
-                      "h-5 w-5 flex-shrink-0"
-                    )}
-                    aria-hidden="true"
-                  />
-                ))}
-              </div>
+              {book.averageRating && (
+                <div className="ml-1 flex items-center">
+                  {[0, 1, 2, 3, 4].map((rating) => (
+                    <StarIcon
+                      key={rating}
+                      className={classNames(
+                        book.averageRating > rating
+                          ? "text-yellow-400"
+                          : "text-gray-200",
+                        "h-5 w-5 flex-shrink-0"
+                      )}
+                      aria-hidden="true"
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           </div>
-          <p className="mt-4 text-sm text-gray-500 line-clamp-5">{reason}</p>
+          {reason && (
+            <p className="mt-4 text-sm text-gray-500 line-clamp-5">{reason}</p>
+          )}
         </div>
       </div>
     </div>

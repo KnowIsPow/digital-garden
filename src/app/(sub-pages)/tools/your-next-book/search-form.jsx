@@ -2,18 +2,43 @@
 
 import { Button } from "@/components/button";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
+import { BookPreview } from "./book-preview";
+import { classNames } from "@/functions/class-names";
+import { getBooks } from "./functions";
 
-export function SearchForm() {
+export function SearchForm({ providedBook }) {
   const pathname = usePathname();
   const { replace } = useRouter();
 
+  const [books, setBooks] = useState([]);
+
+  const [selectedBook, setSelectedBook] = useState(undefined);
+
+  const [bookPreview, setBookPreview] = useState(providedBook || undefined);
+
   async function search(formData) {
+    setBookPreview(selectedBook.volumeInfo);
     const params = new URLSearchParams();
 
-    const book = formData.get("book");
-    params.set("book", book);
+    params.set("book", selectedBook.id);
 
+    setBooks([]);
     replace(`${pathname}?${params.toString()}`);
+  }
+
+  const handleInputChange = async (event) => {
+    const query = event.target.value;
+    if (query.length > 0) {
+      const result = await getBooks(query);
+      setBooks(result.items);
+    } else {
+      setBooks([]);
+    }
+  };
+
+  if (bookPreview) {
+    return <BookPreview book={bookPreview} />;
   }
 
   return (
@@ -25,8 +50,33 @@ export function SearchForm() {
         placeholder="Mans Search for Meaning"
         aria-describedby="book"
         required
+        onChange={handleInputChange}
       />
-      <Button type="submit" className="w-full mt-4" variant="secondary">
+      {books.length > 0 && (
+        <ul className="space-y-2 py-4">
+          {books.map((book, index) => {
+            return (
+              <li
+                className={classNames(
+                  selectedBook &&
+                    selectedBook.id == book.id &&
+                    "rounded-md bg-blue-50"
+                )}
+                onClick={() => setSelectedBook(book)}
+                key={index}
+              >
+                <BookPreview book={book.volumeInfo} />
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      <Button
+        type="submit"
+        className="w-full mt-4"
+        variant="secondary"
+        disabled={!selectedBook}
+      >
         Search
       </Button>
     </form>

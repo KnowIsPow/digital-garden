@@ -1,51 +1,13 @@
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
 import { BookPreview } from "./book-preview";
-import { Configuration, OpenAIApi } from "openai-edge";
 import { Suspense } from "react";
 import { SearchForm } from "./search-form";
-
-const config = new Configuration({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const openai = new OpenAIApi(config);
-
-async function getRecommendations(...books) {
-  try {
-    const response = await openai.createChatCompletion({
-      model: "gpt-4",
-      messages: [
-        {
-          role: "system",
-          content:
-            'You are a expert librarian who can suggest books based on what a user is looking for.\n\nYou will be supplied a list of books along with a task to perform on the books and a quantity following the task.  The task will be one of the following\n\nSimilar\n- List books that are similar in theme and messaging to the supplied list of books but created by a different author\n\nExplore\n- List books that are similar in writing style but different in theme and messaging to the list of supplied books. \n\nFor example "Explore 10" would mean perform the Explore operation and return 10 books. If no quantity is given, default to 5 books returned.\n\nYou responses should be in valid JSON notation structured as a list of book titles and two or three sentence reasons for the recommendation and why the reader might enjoy it if they enjoyed the supplied book(s).\n\nHere is an example:\n[{title: "Subtle art of Not Giving a F*ck", reason: \'"}, {title: "Lord of the flies", reason: ""}]\n\nPlease do not list the author names as part of the titles. Please do not repeat the same book in your recommendations.',
-        },
-        {
-          role: "user",
-          content: books.join(", "),
-        },
-        {
-          role: "user",
-          content: "Similar 3",
-        },
-      ],
-      temperature: 0.1,
-      max_tokens: 256,
-      top_p: 1,
-      frequency_penalty: 0,
-      presence_penalty: 0,
-    });
-
-    const jsonResponse = await response.json();
-    return JSON.parse(jsonResponse.choices[0].message.content);
-  } catch (error) {
-    console.error("Failed to fetch recommendations:", error);
-    throw error; // Re-throw the error to handle it in the UI if needed
-  }
-}
+import { getBook, getBookById, getRecommendations } from "./functions";
+import { SearchFormWrapper } from "./search-form-wrapper";
 
 export default async function YourNextBookPage({ searchParams }) {
-  const book = searchParams?.book || undefined;
+  const selectedBook = searchParams?.book || undefined;
 
   return (
     <>
@@ -54,13 +16,12 @@ export default async function YourNextBookPage({ searchParams }) {
           What should I read next?
         </h1>
         <p className="text-white/90">
-          Picking your next book can be challenging. This tool encourages you to
-          first decide a general purpose for reading another book, and then uses
-          books you have read in the past to generate recommendations on books
-          you may like that accomplish your goal.
+          Picking your next book can be challenging. This tool encourages you
+          use books you have read in the past to generate recommendations on new
+          books.
         </p>
       </Header>
-      <Content className="md:bg-white md:shadow-lg h-full mx-auto md:-translate-y-24 md:border py-8 space-y-4">
+      <Content className="md:bg-white md:shadow-lg h-full mx-auto md:-translate-y-24 md:border py-8 space-y-4 rounded-md">
         <p className="font-medium">
           Which book would you like to find similar books for?
         </p>
@@ -75,12 +36,12 @@ export default async function YourNextBookPage({ searchParams }) {
             </li>
           ))}
         </ul> */}
-        <SearchForm />
+        <SearchFormWrapper selectedBook={selectedBook} />
       </Content>
-      {book && (
+      {selectedBook && (
         <Content className="-translate-y-24">
-          <Suspense key={book} fallback={<LoadingListOfBooks />}>
-            <ListOfBooks seed={searchParams.book} />
+          <Suspense key={selectedBook} fallback={<LoadingListOfBooks />}>
+            <ListOfBooks seedBookId={selectedBook} />
           </Suspense>
         </Content>
       )}
@@ -88,23 +49,13 @@ export default async function YourNextBookPage({ searchParams }) {
   );
 }
 
-async function getBook(keyword) {
-  const res = await fetch(
-    `https://www.googleapis.com/books/v1/volumes?maxResults=1&fields=items(volumeInfo)&q=${encodeURIComponent(
-      keyword
-    )}`
-  );
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch book data");
-  }
-  const jsonResponse = await res.json();
-  return jsonResponse.items[0].volumeInfo;
-}
-
-async function ListOfBooks({ seed }) {
+async function ListOfBooks({ seedBookId }) {
   try {
-    const books = await getRecommendations(seed);
+    const book = await getBookById(seedBookId);
+
+    const books = await getRecommendations(
+      `${book.title}${book.subtitle && `: ${book.subtitle}`}`
+    );
 
     const expandedBooks = await Promise.all(
       books.map((book) => getBook(book.title))
