@@ -1,3 +1,5 @@
+export const maxDuration = 60;
+
 export async function getBooks(keyword) {
   const res = await fetch(
     `https://www.googleapis.com/books/v1/volumes?maxResults=3&fields=items(id,volumeInfo/title,volumeInfo/authors,volumeInfo/imageLinks,volumeInfo/categories,volumeInfo/industryIdentifiers,volumeInfo/description)&langRestrict=en&q=${encodeURIComponent(
