@@ -1,6 +1,6 @@
 {
     "functions": {
-      "app/tools/**/*": {
+      "app/**/*": {
         "maxDuration": 60
       }
     }
