@@ -41,6 +41,10 @@ export default async function SubscribePage() {
               backgroundColor: "transparent",
             }}
           />
+          <p className="text-white text-xs mt-4">
+            If you don&apos;t see the subscribe form, you may have an ad-blocker
+            installed that blocks it.
+          </p>
         </div>
       </Header>
 
