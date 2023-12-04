@@ -1,3 +1,5 @@
+import { getBaseURL } from "@/functions/get-base-url";
+
 export async function getBooks(keyword) {
   const res = await fetch(
     `https://www.googleapis.com/books/v1/volumes?maxResults=3&fields=items(id,volumeInfo/title,volumeInfo/authors,volumeInfo/imageLinks,volumeInfo/categories,volumeInfo/industryIdentifiers,volumeInfo/description)&langRestrict=en&q=${encodeURIComponent(
@@ -51,19 +53,14 @@ export async function getRecommendations(...books) {
   ];
 
   try {
-    const response = await fetch(
-      `${
-        process.env.NEXT_PUBLIC_SITE_URL ?? process.env.NEXT_PUBLIC_VERCEL_URL
-      }/api/chat`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+    const response = await fetch(`${getBaseURL()}/api/chat`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
 
-        body: JSON.stringify({ messages }),
-      }
-    );
+      body: JSON.stringify({ messages }),
+    });
 
     return await response.json();
   } catch (error) {
