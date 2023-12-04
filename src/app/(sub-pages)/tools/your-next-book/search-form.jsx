@@ -77,7 +77,7 @@ export function SearchForm({ providedBook }) {
         variant="secondary"
         disabled={!selectedBook}
       >
-        Search
+        Recommend A Book
       </Button>
     </form>
   );

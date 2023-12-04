@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { SearchForm } from "./search-form";
 import { getBook, getBookById, getRecommendations } from "./functions";
 import { SearchFormWrapper } from "./search-form-wrapper";
+import { Button } from "@/components/button";
 
 export default async function YourNextBookPage({ searchParams }) {
   const selectedBook = searchParams?.book || undefined;
@@ -41,6 +42,9 @@ export default async function YourNextBookPage({ searchParams }) {
       {selectedBook && (
         <Content className="-translate-y-24">
           <Suspense key={selectedBook} fallback={<LoadingListOfBooks />}>
+            <h2 className="text-lg font-medium sm:text-2xl mb-4">
+              Recommendations
+            </h2>
             <ListOfBooks seedBookId={selectedBook} />
           </Suspense>
         </Content>
@@ -70,6 +74,9 @@ async function ListOfBooks({ seedBookId }) {
             reason={books[index].reason}
           />
         ))}
+        <div className="text-center pt-4">
+          <Button variant="outline">Generate Another</Button>
+        </div>
       </div>
     );
   } catch (e) {
@@ -88,12 +95,8 @@ async function ListOfBooks({ seedBookId }) {
 function LoadingListOfBooks() {
   return (
     <div className="space-y-4">
-      {Array.from({ length: 3 }, (_, i) => i + 1).map((idx) => (
-        <div
-          key={idx}
-          className="h-48 animate-pulse bg-gray-50 border rounded-md"
-        />
-      ))}
+      <div className="h-12 animate-pulse bg-gray-100 border rounded-md mb-4" />
+      <div className="h-48 animate-pulse bg-gray-100 border rounded-md" />
     </div>
   );
 }
