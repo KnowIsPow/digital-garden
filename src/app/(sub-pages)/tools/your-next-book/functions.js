@@ -51,14 +51,19 @@ export async function getRecommendations(...books) {
   ];
 
   try {
-    const response = await fetch("http://localhost:3000/api/chat", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+    const response = await fetch(
+      `${
+        process.env.NEXT_PUBLIC_SITE_URL ?? process.env.NEXT_PUBLIC_VERCEL_URL
+      }/api/chat`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
 
-      body: JSON.stringify({ messages }),
-    });
+        body: JSON.stringify({ messages }),
+      }
+    );
 
     return await response.json();
   } catch (error) {
