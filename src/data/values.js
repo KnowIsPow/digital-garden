@@ -1,6 +1,6 @@
 export const values = [
-  "Live congruently.",
   "Radiate love.",
+  "Live congruently.",
   "The universe is your ally.",
   "Do your best in every moment.",
   "Be impeccable with your word.",
