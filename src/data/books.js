@@ -316,7 +316,6 @@ export const books = [
     score: 5,
     keyTakeaway: "Humanity devolved into apehood.",
   },
-  { title: "Rich Dad Poor Dad", score: 5, keyTakeaway: "" },
   { title: "The Effective Executive", score: 5, keyTakeaway: "" },
   {
     title: "You're a Badass at Making Money",
@@ -331,11 +330,12 @@ export const books = [
   {
     title: "Models (Mark Manson)",
     score: 5,
-    keyTakeaway: "A guide ton no-bullshit, zero game-playing, authentic dating",
+    keyTakeaway: "A guide to no-bullshit, zero game-playing, authentic dating",
   },
   { title: "The $100 Startup", score: 4, keyTakeaway: "" },
   { title: "Unfu*k Yourself", score: 4, keyTakeaway: "" },
   { title: "The Go-Giver", score: 4, keyTakeaway: "" },
+  { title: "Rich Dad Poor Dad", score: 3, keyTakeaway: "" },
   {
     title: "Start With Why",
     score: 3,
