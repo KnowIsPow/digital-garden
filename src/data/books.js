@@ -62,6 +62,12 @@ export const books = [
     keyTakeaway: "A story of suffering and the path to nirvana.",
   },
   {
+    title: "Life Of Pi",
+    score: 8,
+    keyTakeaway:
+      "A fantastic take story and perspective on faith in a higher power.",
+  },
+  {
     title: "How to Make Friends & Influence People",
     score: 8,
     keyTakeaway: "The book that started my personal growth journey.",
@@ -105,6 +111,12 @@ export const books = [
     score: 7.5,
     keyTakeaway:
       "The Hindu reflection of a good life. Lot's of wisdom to be gleaned from it.",
+  },
+  {
+    title: "The War of Art",
+    score: 7.5,
+    keyTakeaway:
+      "A great perspective on resistance and how (and when) to push through it.",
   },
   {
     title: "Think and Grow Rich",
@@ -180,6 +192,7 @@ export const books = [
     score: 7,
     keyTakeaway: "Learn how to market to anyone.",
   },
+
   {
     title: "48 Laws of Power",
     score: 7,
@@ -192,7 +205,7 @@ export const books = [
     keyTakeaway: "Learn about human mating behaviors.",
   },
   {
-    title: "101 Essays That Will Change the Way You Thin",
+    title: "101 Essays That Will Change the Way You Think",
     score: 6.5,
     keyTakeaway:
       "This book covers a wide range of topics... it inspires me to write more.",
@@ -221,6 +234,11 @@ export const books = [
     score: 6,
     keyTakeaway:
       "Learn to negotiate with empathy, and expand the pool of resources for everyone.",
+  },
+  {
+    title: "Chop Wood Carry Water",
+    score: 6,
+    keyTakeaway: "A reminder to focus on the process and not the outcome.",
   },
   {
     title: "The Art of War",
@@ -264,16 +282,28 @@ export const books = [
     keyTakeaway: "Processing infidelity within a relationship.",
   },
   {
+    title: "Anything You Want",
+    score: 6,
+    keyTakeaway: "A story about running a startup and leading a good life.",
+  },
+  {
     title: "Ego Is The Enemy",
     score: 6,
     keyTakeaway:
       "Set aside your ego to find greater actualization of your ideal life.",
   },
+
   {
     title: "The Way of the Superior Man",
     score: 6,
     keyTakeaway:
       "Lean into life with love and passionately pursue your ultimate purpose at all costs.",
+  },
+  {
+    title: "The Virtue of Selfishness",
+    score: 6,
+    keyTakeaway:
+      "A completely different perspective on Truth, and where we should base our moral system.",
   },
   {
     title: "The Third Door",
