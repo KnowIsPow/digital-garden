@@ -8,7 +8,7 @@ export const books = [
     title: "Subtle Art of Not Giving A F*ck",
     score: 10,
     keyTakeaway:
-      "Learn to prioritize what's important and be indiferrent to the rest.",
+      "Learn to prioritize what's important and be indifferent to the rest.",
   },
   {
     title: "Man's Search for Meaning",
@@ -160,6 +160,12 @@ export const books = [
       "A thoughtful reflection of timeless human patterns distilled into a collection of rules to live by.",
   },
   {
+    title: "Tattoos on the Heart",
+    score: 7,
+    keyTakeaway:
+      "A beautiful account of one priests time practicing love for suffering humans (gang members).",
+  },
+  {
     title: "Cultivating an Unshakeable Character",
     score: 7,
     keyTakeaway: "Reflect on the components of your character.",
@@ -174,7 +180,7 @@ export const books = [
     title: "Kaftka On The Shore",
     score: 7,
     keyTakeaway:
-      "The closest you will get to conciously dreaming... This book is a deep dive into the subconscious.",
+      "The closest you will get to consciously dreaming... This book is a deep dive into the subconscious.",
   },
   {
     title: "Essentialism",
@@ -182,17 +188,33 @@ export const books = [
     keyTakeaway: "Do less, but better.",
   },
   {
+    title: "Slaughterhouse-Five",
+    score: 7,
+    keyTakeaway: "Death and war and a well-written novel.",
+  },
+  {
+    title: "The Stranger",
+    score: 7,
+    keyTakeaway:
+      "An introduction to absurdism. Good for those who want to understand nihilism without jumping deep into the pit.",
+  },
+  {
     title: "The E-Myth: Revisited",
     score: 7,
     keyTakeaway:
-      "Systemization in critically important in business and in life.",
+      "Systematization in critically important in business and in life.",
+  },
+  {
+    title: "The School Of Life: An Emotional Education",
+    score: 7,
+    keyTakeaway:
+      "Dives into psychology, culture, work, and relationships in an approachable way.",
   },
   {
     title: "Influence: Science and Practice",
     score: 7,
     keyTakeaway: "Learn how to market to anyone.",
   },
-
   {
     title: "48 Laws of Power",
     score: 7,
@@ -211,6 +233,12 @@ export const books = [
       "This book covers a wide range of topics... it inspires me to write more.",
   },
   {
+    title: "Get Together",
+    score: 6.5,
+    keyTakeaway:
+      "Learn how to build, grown, and sustain community from some of the best.",
+  },
+  {
     title: "Crucial Conversations",
     score: 6.5,
     keyTakeaway:
@@ -221,7 +249,7 @@ export const books = [
     title: "How to Be Perfect",
     score: 6.5,
     keyTakeaway:
-      "A modern (and funny) reflection of moral philosophy. Would be rated higher if it was less opininated/politically charged.",
+      "A modern (and funny) reflection of moral philosophy. Would be rated higher if it was less opinionated/politically charged.",
   },
   {
     title: "Zero to One",
@@ -234,6 +262,13 @@ export const books = [
     score: 6,
     keyTakeaway:
       "Learn to negotiate with empathy, and expand the pool of resources for everyone.",
+  },
+  {
+    title:
+      "Profit First: Transform Your Business from a Cash-Eating Monster to a Money-Making Machine",
+    score: 6.5,
+    keyTakeaway:
+      "Simple and actionable tips for creating a sustainable and profitable business.",
   },
   {
     title: "Chop Wood Carry Water",
@@ -292,7 +327,11 @@ export const books = [
     keyTakeaway:
       "Set aside your ego to find greater actualization of your ideal life.",
   },
-
+  {
+    title: "Same As Ever",
+    score: 6,
+    keyTakeaway: "A story about what always stays the same for humans.",
+  },
   {
     title: "The Way of the Superior Man",
     score: 6,
@@ -310,6 +349,11 @@ export const books = [
     score: 6,
     keyTakeaway:
       "A story about the person power that comes with creating new options.",
+  },
+  {
+    title: "The Untethered Soul",
+    score: 5,
+    keyTakeaway: "Getting in touch with divinity within.",
   },
   {
     title: "Lord of the Flies",
