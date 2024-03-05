@@ -5,6 +5,7 @@ import Link from "next/link";
 import Chart from "@/app/chart";
 import Quote from "./quote";
 import WageCalculator from "@/components/snippets/calculators/wages";
+import MagicChecklist from "@/components/snippets/visualization/magic-checklist";
 
 export const markdownComponents = {
   img: (props) => (
@@ -34,4 +35,5 @@ export const markdownComponents = {
   Chart,
   Quote,
   WageCalculator,
+  MagicChecklist,
 };
