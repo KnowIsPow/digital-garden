@@ -1,4 +1,4 @@
-import { BackToMainPage } from "@/components/back-button";
+import Calendar15 from "@/components/calendar/15-min";
 import { Header } from "@/components/header";
 
 export const metadata = {
@@ -37,6 +37,7 @@ export default async function ContactPage() {
           </a>
         </p>
       </Header>
+      <Calendar15 />
     </>
   );
 }
