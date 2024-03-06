@@ -6,6 +6,8 @@ import Chart from "@/app/chart";
 import Quote from "./quote";
 import WageCalculator from "@/components/snippets/calculators/wages";
 import MagicChecklist from "@/components/snippets/visualization/magic-checklist";
+import Calendar from "@/components/calendar/";
+import Wide from "@/components/ui/formatting/wide";
 
 export const markdownComponents = {
   img: (props) => (
@@ -36,4 +38,6 @@ export const markdownComponents = {
   Quote,
   WageCalculator,
   MagicChecklist,
+  Calendar,
+  Wide,
 };

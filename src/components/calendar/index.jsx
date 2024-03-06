@@ -2,7 +2,7 @@
 
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-export default function Calendar({ calendarID = "15min" }) {
+export default function Calendar({ calendarID = "contact" }) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
