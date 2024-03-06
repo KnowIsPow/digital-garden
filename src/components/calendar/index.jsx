@@ -2,7 +2,7 @@
 
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-export default function Calendar15() {
+export default function Calendar({ calendarID = "15min" }) {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
@@ -15,7 +15,7 @@ export default function Calendar15() {
   }, []);
   return (
     <Cal
-      calLink="curtis-fisher/15min"
+      calLink={`curtis-fisher/${calendarID}`}
       style={{ width: "100%", height: "100%", overflow: "scroll" }}
       config={{ layout: "month_view" }}
     />
