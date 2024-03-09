@@ -5,7 +5,10 @@ import Link from "next/link";
 
 export function Navbar() {
   return (
-    <Content as="div" className="py-8 gap-4 grid grid-cols-3 mb-12">
+    <Content
+      as="div"
+      className="py-8 gap-4 grid sm:grid-cols-3 mb-12 text-center sm:text-left"
+    >
       <div className="col-span-1">
         <Link href="/" className="group font-bold">
           <span className="group-hover:hidden">curtis fisher.</span>
@@ -30,7 +33,7 @@ export function Navbar() {
           ))}
         </ul>
       </nav>
-      <div className="col-span-1 text-right">
+      <div className="col-span-1 sm:text-right">
         <Link href="/subscribe" className="group">
           <span className="group-hover:hidden">subscribe.</span>
           <span className="hidden group-hover:block underline underline-offset-8">
