@@ -1,5 +1,6 @@
 import Calendar from "@/components/calendar";
 import { Header } from "@/components/header";
+import { Heading } from "@/components/ui/heading";
 
 export const metadata = {
   title: "Get In Touch",
@@ -19,18 +20,16 @@ export const metadata = {
 export default async function ContactPage() {
   return (
     <>
-      <Header color="red">
-        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          Contact curtis.
-        </h1>
-        <p className="text-white/90">
+      <Header noBorder>
+        <Heading className="mb-4">Introduce Yourself.</Heading>
+        <p>
           I love meeting and learning about new people around the world. No need
           to ask a question. Tell me where you are and what you&apos;re working
           on. I reply to all.
         </p>
         <p className="mt-4">
           <a
-            className="text-red-400 hover:underline"
+            className="underline underline-offset-8 decoration-gray-200 hover:decoration-gray-600 duration-200"
             href="mailto:me@curtisfisher.com"
           >
             me@curtisfisher.com

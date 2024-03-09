@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        <main className="-mt-[138px] md:-mt-[94px]">{children}</main>
+        <main>{children}</main>
         <Content as="footer" className="py-12 space-y-6">
           <p className="text-gray-600">
             I&apos;m working to grow this digital garden. Please excuse the

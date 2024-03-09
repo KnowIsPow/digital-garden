@@ -5,9 +5,9 @@ import { cva } from "class-variance-authority";
 const calloutBackground = cva("relative my-12 rounded-lg border-l-4 p-8", {
   variants: {
     color: {
-      green: "border-green-500 bg-green-500/30",
-      blue: "border-blue-500 bg-blue-500/20",
-      yellow: "border-yellow-500 bg-yellow-500/30",
+      green: "border-green-400 bg-green-300/30",
+      blue: "border-blue-400 bg-blue-300/20",
+      yellow: "border-yellow-400 bg-yellow-300/30",
     },
   },
   defaultVariants: {
@@ -18,9 +18,9 @@ const calloutBackground = cva("relative my-12 rounded-lg border-l-4 p-8", {
 const calloutIcon = cva("h-10 w-10", {
   variants: {
     color: {
-      green: "text-green-500",
-      blue: "text-blue-500",
-      yellow: "text-yellow-500",
+      green: "text-green-400",
+      blue: "text-blue-400",
+      yellow: "text-yellow-400",
     },
   },
   defaultVariants: {

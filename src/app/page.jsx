@@ -1,8 +1,10 @@
 import { ArticleCard } from "@/components/article-card";
 import { Header } from "@/components/header";
+import { Heading, heading } from "@/components/ui/heading";
 import { books } from "@/data/books";
 import { credentials } from "@/data/credentials";
 import { values } from "@/data/values";
+import { classNames } from "@/functions/class-names";
 import { getArticles } from "@/functions/markdown";
 import Link from "next/link";
 
@@ -18,50 +20,49 @@ export default async function Home() {
 
   return (
     <div className="space-y-12">
-      <Header color="blue">
-        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
-          <span className="block text-blue-400 mb-4 text-xl font-medium">
+      <Header>
+        <Heading>
+          <span className="block mb-4 text-xl font-medium">
             Hiya, I&apos;m Curtis Fisher 👋
           </span>
           Passionate advocate for{" "}
-          <span className="text-green-300 border-b-2 hover:border-green-400 border-transparent duration-200">
-            ethical business
-          </span>
+          <span className="text-green-500">ethical business</span>
           {", "}
-          <span className="text-red-300 border-b-2 hover:border-red-400 border-transparent duration-200">
-            compassionate relationships
-          </span>
-          , and{" "}
-          <span className="text-yellow-300 border-b-2 hover:border-yellow-400 border-transparent duration-200">
-            living well
-          </span>
-          .
-        </h1>
+          <span className="text-red-500">compassionate relationships</span>, and{" "}
+          <span className="text-yellow-500">living well</span>.
+        </Heading>
       </Header>
-      <section className="space-y-16 mx-auto max-w-3xl px-6 lg:px-8">
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
-            Recent Articles.
-          </h2>
+      <div className="space-y-16 mx-auto max-w-3xl px-6 lg:px-8">
+        <section>
+          <div
+            className={classNames(
+              "gap-x-2 mb-4 space-x-2",
+              heading({ size: "h2" })
+            )}
+          >
+            <h2 className="inline">Recent Stories</h2>
+            <span className="text-gray-400">/</span>
+            <Link
+              href="/blog"
+              className="text-gray-500 hover:underline underline-offset-4"
+            >
+              Explore Stories
+            </Link>
+          </div>
           <p className="mt-2 mb-6 text-gray-700">
             A special place for my thoughts and opinions.
           </p>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-6">
             {articles
               .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
               .slice(0, 4)
               .map((article) => (
                 <ArticleCard article={article} key={article.meta.title} />
               ))}
-            <div className="text-blue-500 hover:underline">
-              <Link href="/blog">View More Blog Articles</Link>
-            </div>
           </div>
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
-            Values.
-          </h2>
+        </section>
+        <section>
+          <Heading size="h2">Values.</Heading>
           <p className="mt-2 mb-6 text-gray-700">
             These are fundamental to who I am and serve to guide my decison
             making.
@@ -71,11 +72,24 @@ export default async function Home() {
               <li key={value}>✅ {value}</li>
             ))}
           </ul>
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
-            Book Recommendations.
-          </h2>
+        </section>
+        <section>
+          <div
+            className={classNames(
+              "gap-x-2 mb-4 space-x-2",
+              heading({ size: "h2" })
+            )}
+          >
+            <h2 className="inline">Favorite Books</h2>
+            <span className="text-gray-400">/</span>
+            <Link
+              href="/books"
+              className="text-gray-500 hover:underline underline-offset-4"
+            >
+              Explore Books
+            </Link>
+          </div>
+
           <p className="mt-2 mb-6 text-gray-700">
             A selection of the best five books I&apos;ve read.
           </p>
@@ -87,14 +101,23 @@ export default async function Home() {
               ))
               .slice(0, 5)}
           </ul>
-          <div className="mt-12 text-blue-500 hover:underline">
-            <Link href="/books">View More Book Recommendations</Link>
+        </section>
+        <section>
+          <div
+            className={classNames(
+              "gap-x-2 mb-4 space-x-2",
+              heading({ size: "h2" })
+            )}
+          >
+            <h2 className="inline">Recent Experience</h2>
+            <span className="text-gray-400">/</span>
+            <Link
+              href="/credentials"
+              className="text-gray-500 hover:underline underline-offset-4"
+            >
+              Explore Experiences
+            </Link>
           </div>
-        </div>
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-blue-800 lowercase sm:text-4xl">
-            Recent Projects & Experiences.
-          </h2>
           <p className="mt-2 mb-6 text-gray-700">
             The skills and wisdom I&apos;ve aquired through work.
           </p>
@@ -110,11 +133,8 @@ export default async function Home() {
               </li>
             ))}
           </ul>
-          <div className="mt-12 text-blue-500 hover:underline">
-            <Link href="/credentials">View Full Credentials</Link>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export async function GET() {
   const feed = new Rss({
     title: "Curtis Fisher's Blog",
     description:
-      "A selection of thoughts, ideas, and reflections to delight the introspective spirit.",
+      " A selection of thoughts, ideas, and reflections to help you think differently.",
     feed_url: `${SITE_URL}/blog/rss.xml`,
     site_url: SITE_URL,
     language: "en",

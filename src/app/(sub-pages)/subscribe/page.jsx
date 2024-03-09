@@ -1,5 +1,8 @@
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
+import { NewsletterForm } from "@/components/snippets/newsletter";
+import Wide from "@/components/ui/formatting/wide";
+import { Heading } from "@/components/ui/heading";
 
 export const metadata = {
   title: "Subscribe",
@@ -19,36 +22,30 @@ export const metadata = {
 export default async function SubscribePage() {
   return (
     <>
-      <Header color="blue">
-        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          Subscribe to Newsletter
-        </h1>
-        <p className="text-white/90">
-          Get monthly updates on the latest insights and projects. Each month
-          features a new article and a fresh project. Interested in staying
-          informed? Subscribe here for regular updates.
+      <Header noBorder>
+        <Heading className="mb-4">
+          subscribe to mindful notes, delivered once per quarter.
+        </Heading>
+        <p>
+          Do you really need a weekly blast from your favorite content creators?
+          They&apos;re counting on this week being the one that you buy their
+          course.
         </p>
-        <div className="mt-6">
-          <iframe
-            src="https://embeds.beehiiv.com/426e1d3a-3fd0-4367-ad7e-c2711f9938f7"
-            data-test-id="beehiiv-embed"
-            width="100%"
-            height={320}
-            style={{
-              borderRadius: 4,
-              border: "2px solid #e5e7eb",
-              margin: 0,
-              backgroundColor: "transparent",
-            }}
-          />
-          <p className="text-white text-xs mt-4">
-            If you don&apos;t see the subscribe form, you may have an ad-blocker
-            installed that blocks it.
-          </p>
-        </div>
+        <p className="mt-4">
+          As an essentialist, I focus on that which is valuable and essential.
+          This newsletter is a no-fluff, bare-bones, four times per year
+          institution.
+        </p>
       </Header>
-
-      <Content as="section"></Content>
+      <Content>
+        <Wide>
+          <NewsletterForm />
+        </Wide>
+        <p className="text-xs mt-4">
+          If you don&apos;t see the subscribe form, you may have an ad-blocker
+          installed that blocks it.
+        </p>
+      </Content>
     </>
   );
 }

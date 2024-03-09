@@ -1,17 +1,17 @@
 import { ArticleCard } from "@/components/article-card";
-import { BackToMainPage } from "@/components/back-button";
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
+import { Heading } from "@/components/ui/heading";
 import { getArticles } from "@/functions/markdown";
 
 export const metadata = {
   title: "A Collection of Thoughts and Ideas",
   description:
-    "A selection of writings and resources that I&apos;ve accumulated along my journey.",
+    "A selection of thoughts, ideas, and reflections to help you think differently.",
   openGraph: {
     title: "A Collection of Thoughts and Ideas - Curtis Fisher",
     description:
-      "A selection of writings and resources that I&apos;ve accumulated along my journey.",
+      "A selection of thoughts, ideas, and reflections to help you think differently.",
     url: "https://www.curtisfisher.com/blog",
   },
   alternates: {
@@ -23,14 +23,12 @@ export default async function BlogPage({ params }) {
   const articles = await getArticles(params.slug);
 
   return (
-    <div className="space-y-12">
-      <Header color="blue">
-        <h1 className="mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          place for brain goops.
-        </h1>
-        <p className="text-blue-100">
-          A selection of thoughts, ideas, and reflections to delight the
-          introspective spirit.
+    <div className="space-y-8">
+      <Header>
+        <Heading className="mb-4">place for brain goops.</Heading>
+        <p>
+          A selection of thoughts, ideas, and reflections to help you think
+          differently.
         </p>
       </Header>
       <Content as="section" className="space-y-6">

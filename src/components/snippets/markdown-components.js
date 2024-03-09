@@ -2,7 +2,6 @@ import { Callout } from "@/components/snippets/callout";
 import Stat from "@/components/snippets/stat";
 import Image from "next/image";
 import Link from "next/link";
-import Chart from "@/app/chart";
 import Quote from "./quote";
 import WageCalculator from "@/components/snippets/calculators/wages";
 import MagicChecklist from "@/components/snippets/visualization/magic-checklist";
@@ -34,7 +33,6 @@ export const markdownComponents = {
   },
   Callout,
   Stat,
-  Chart,
   Quote,
   WageCalculator,
   MagicChecklist,

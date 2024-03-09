@@ -1,6 +1,6 @@
-import { BackToMainPage } from "@/components/back-button";
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
+import { Heading } from "@/components/ui/heading";
 import { credentials } from "@/data/credentials";
 
 export const metadata = {
@@ -21,16 +21,11 @@ export const metadata = {
 export default async function CredentialsPage() {
   return (
     <>
-      <Header color="black">
-        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          Credentials.
-        </h1>
-        <p className="text-white/90">
-          It&apos;s important to consider the believability of resources.
-          I&apos;m going to share a lot of resources and experiences on this
-          website, but I&apos;m not an expert on everything shared. This page
-          serves to highlight which resources are backed by experience, and
-          which are my own opinion and should be taken with a grain of salt.
+      <Header>
+        <Heading className="mb-4">Credentials.</Heading>
+        <p>
+          I&apos;m not an expert on everything shared in this digital garden.
+          This page differentiates resourced-backed experiences from conjecture.
         </p>
       </Header>
 

@@ -1,8 +1,10 @@
 import { ArticleTime } from "@/components/article-time";
-import { BackToMainPage } from "@/components/back-button";
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
+import { heading } from "@/components/ui/heading";
+import { classNames } from "@/functions/class-names";
 import { getArticle } from "@/functions/markdown";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -30,19 +32,23 @@ export default async function ArticlePage({ params }) {
 
   return (
     <>
-      <Header color="blue">
-        <div className="mb-4 text-blue-400">
-          <BackToMainPage />
+      <Header>
+        <div className={classNames("gap-x-2 mb-4 space-x-2", heading())}>
+          <Link
+            href="/blog"
+            className="text-gray-500 hover:underline underline-offset-4"
+          >
+            Stories
+          </Link>
+          <span className="text-gray-400">/</span>
+          <h1 className="inline">{meta.title}</h1>
         </div>
-        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          {meta.title}
-        </h1>
-        <p className="text-white/90">
+        <p className="lowercase">
           <ArticleTime date={meta.date} /> -{" "}
           <span className="opacity-70">{meta.readingTime} Minute Read</span>
         </p>
       </Header>
-      <Content className="space-y-12">
+      <Content>
         <article className="max-w-full px-0 prose md:prose-lg">
           {content}
         </article>

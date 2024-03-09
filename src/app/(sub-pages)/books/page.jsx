@@ -1,5 +1,6 @@
 import { Content } from "@/components/content";
 import { Header } from "@/components/header";
+import { Heading } from "@/components/ui/heading";
 import { books } from "@/data/books";
 
 export const metadata = {
@@ -21,17 +22,11 @@ export default async function BooksPage() {
   return (
     <>
       <Header color="green">
-        <h1 className="lowercase mb-4 text-2xl font-bold tracking-tight text-white sm:text-4xl">
-          Book Recommendations.
-        </h1>
-        <p className="text-white/90">
-          A priority ordered list of the books I&apos;ve read to date. Note that
-          these scores are based on what current Curtis thinks of the books. At
-          certain times, some of these books had a profound impact on my
-          thinking and past Curtis may have ranked them higher for the role they
-          served. The books at the top of this list tend to apply to everyday
-          situations, while the books near the bottom tend to scratch specific
-          itches (or they&apos;re outright not amazing).
+        <Heading className="mb-4">Book Recommendations.</Heading>
+        <p>
+          Occasionally, certain books profoundly impact my thinking. Higher
+          ranked books are more universally good, while lower-ranked books were
+          good for a particular purpose (or they&apos;re outright not amazing).
         </p>
       </Header>
 
