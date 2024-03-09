@@ -21,7 +21,7 @@ export const metadata = {
 export default async function BooksPage() {
   return (
     <>
-      <Header color="green">
+      <Header>
         <Heading className="mb-4">Book Recommendations.</Heading>
         <p>
           Occasionally, certain books profoundly impact my thinking. Higher
@@ -37,7 +37,7 @@ export default async function BooksPage() {
             .map((book) => (
               <li key={book.title}>
                 <h2 className="font-medium">{`${book.title} – ⭐ ${book.score}`}</h2>
-                <p className="text-gray-600">{book.keyTakeaway}</p>
+                <p className="opacity-80">{book.keyTakeaway}</p>
               </li>
             ))}
         </ul>

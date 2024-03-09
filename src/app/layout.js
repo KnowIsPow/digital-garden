@@ -52,11 +52,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="dark:bg-black dark:text-white">
         <Navbar />
         <main>{children}</main>
         <Content as="footer" className="py-12 space-y-6">
-          <p className="text-gray-600">
+          <p className="opacity-80">
             I&apos;m working to grow this digital garden. Please excuse the
             appearance and noted lack of resources as I have only recently
             planted the seeds.

@@ -46,11 +46,13 @@ export default async function CredentialsPage() {
 function Credential({ credential }) {
   return (
     <li>
-      <h2 className="text-blue-700 text-lg">
+      <h2 className="text-blue-700 dark:text-blue-400 text-lg">
         {credential.role}{" "}
-        <span className="text-gray-500">@ {credential.company}</span>
+        <span className="text-gray-500 dark:text-gray-300">
+          @ {credential.company}
+        </span>
       </h2>
-      <p className="text-gray-500">
+      <p className="text-gray-500 dark:text-gray-300">
         {credential.startDate} - {credential.endDate}
       </p>
       <p className="mt-4">{credential.description}</p>

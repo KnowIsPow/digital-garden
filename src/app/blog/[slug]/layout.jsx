@@ -33,7 +33,7 @@ export default async function ArticleLayout({ params, children }) {
               <ArticleCard article={article} key={article.meta.title} />
             ))}
         </div>
-        <div className="mt-8 text-lg text-gray-400 lowercase hover:underline">
+        <div className="mt-8 text-lg opacity-70 lowercase hover:underline">
           <Link href="/blog">Explore all Stories</Link>
         </div>
       </Content>

@@ -23,7 +23,7 @@ export function Navbar() {
           ].map((link) => (
             <li
               key={link.name}
-              className="underline underline-offset-8 decoration-gray-200 hover:decoration-gray-600 duration-200"
+              className="underline underline-offset-8 decoration-gray-200 hover:decoration-gray-600 dark:decoration-gray-600 dark:hover:decoration-gray-200 duration-200"
             >
               <Link href={link.href}>{link.name}.</Link>
             </li>

@@ -36,11 +36,11 @@ export default async function ArticlePage({ params }) {
         <div className={classNames("gap-x-2 mb-4 space-x-2", heading())}>
           <Link
             href="/blog"
-            className="text-gray-500 hover:underline underline-offset-4"
+            className="opacity-60 hover:underline underline-offset-4"
           >
             Stories
           </Link>
-          <span className="text-gray-400">/</span>
+          <span className="opacity-50">/</span>
           <h1 className="inline">{meta.title}</h1>
         </div>
         <p className="lowercase">
@@ -49,7 +49,7 @@ export default async function ArticlePage({ params }) {
         </p>
       </Header>
       <Content>
-        <article className="max-w-full px-0 prose md:prose-lg">
+        <article className="max-w-full px-0 prose md:prose-lg dark:prose-invert">
           {content}
         </article>
       </Content>

@@ -41,15 +41,15 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Recent Stories</h2>
-            <span className="text-gray-400">/</span>
+            <span className="opacity-50">/</span>
             <Link
               href="/blog"
-              className="text-gray-500 hover:underline underline-offset-4"
+              className="opacity-60 hover:underline underline-offset-4"
             >
               Explore Stories
             </Link>
           </div>
-          <p className="mt-2 mb-6 text-gray-700">
+          <p className="mt-2 mb-6 opacity-80">
             A special place for my thoughts and opinions.
           </p>
           <div className="space-y-6">
@@ -63,7 +63,7 @@ export default async function Home() {
         </section>
         <section>
           <Heading size="h2">Values.</Heading>
-          <p className="mt-2 mb-6 text-gray-700">
+          <p className="mt-2 mb-6 opacity-80">
             These are fundamental to who I am and serve to guide my decison
             making.
           </p>
@@ -81,16 +81,16 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Favorite Books</h2>
-            <span className="text-gray-400">/</span>
+            <span className="opacity-50">/</span>
             <Link
               href="/books"
-              className="text-gray-500 hover:underline underline-offset-4"
+              className="opacity-60 hover:underline underline-offset-4"
             >
               Explore Books
             </Link>
           </div>
 
-          <p className="mt-2 mb-6 text-gray-700">
+          <p className="mt-2 mb-6 opacity-80">
             A selection of the best five books I&apos;ve read.
           </p>
           <ul className="ml-4 space-y-2">
@@ -110,15 +110,15 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Recent Experience</h2>
-            <span className="text-gray-400">/</span>
+            <span className="opacity-50">/</span>
             <Link
               href="/credentials"
-              className="text-gray-500 hover:underline underline-offset-4"
+              className="opacity-60 hover:underline underline-offset-4"
             >
               Explore Experiences
             </Link>
           </div>
-          <p className="mt-2 mb-6 text-gray-700">
+          <p className="mt-2 mb-6 opacity-80">
             The skills and wisdom I&apos;ve aquired through work.
           </p>
           <ul className="ml-4 space-y-2">
@@ -129,7 +129,7 @@ export default async function Home() {
                 }
               >
                 {credential.role}{" "}
-                <span className="text-gray-500">@ {credential.company}</span>
+                <span className="opacity-60">@ {credential.company}</span>
               </li>
             ))}
           </ul>

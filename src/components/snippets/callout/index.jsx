@@ -38,7 +38,7 @@ export function Callout({
   return (
     <div className="not-prose">
       <div className={classNames(calloutBackground({ color }))}>
-        <div className="absolute left-0 top-0 -ml-7 -mt-7 rounded-full bg-white p-1">
+        <div className="absolute left-0 top-0 -ml-7 -mt-7 rounded-full bg-white dark:bg-black p-1">
           <Icon className={classNames(calloutIcon({ color }))} />
         </div>
         <p className="font-semibold md:text-lg lg:text-xl">{title}</p>

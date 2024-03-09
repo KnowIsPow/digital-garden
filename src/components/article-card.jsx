@@ -6,14 +6,14 @@ export function ArticleCard({ article }) {
   return (
     <article key={article.title} className="relative group">
       <Link href={`/blog/${article.meta.slug}`} className="group/link">
-        <div className="absolute text-white group-visited/link:text-black -translate-x-5">
+        <div className="absolute text-white group-visited/link:text-black dark:text-black dark:group-visited/link:text-white -translate-x-5">
           x
         </div>
 
         <div className="lowercase flex justify-between items-center">
           <Heading
             size="h3"
-            className=" text-gray-900 group-hover:underline underline-offset-8"
+            className=" text-gray-900 dark:text-gray-50 group-hover:underline underline-offset-8"
           >
             {article.meta.title}
           </Heading>
