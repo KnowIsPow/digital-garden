@@ -41,10 +41,10 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Recent Stories</h2>
-            <span className="opacity-50">/</span>
+            <span className="opacity-60">/</span>
             <Link
               href="/blog"
-              className="opacity-60 hover:underline underline-offset-4"
+              className="opacity-70 hover:underline underline-offset-4"
             >
               Explore Stories
             </Link>
@@ -81,10 +81,10 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Favorite Books</h2>
-            <span className="opacity-50">/</span>
+            <span className="opacity-60">/</span>
             <Link
               href="/books"
-              className="opacity-60 hover:underline underline-offset-4"
+              className="opacity-70 hover:underline underline-offset-4"
             >
               Explore Books
             </Link>
@@ -110,10 +110,10 @@ export default async function Home() {
             )}
           >
             <h2 className="inline">Recent Experience</h2>
-            <span className="opacity-50">/</span>
+            <span className="opacity-60">/</span>
             <Link
               href="/credentials"
-              className="opacity-60 hover:underline underline-offset-4"
+              className="opacity-70 hover:underline underline-offset-4"
             >
               Explore Experiences
             </Link>
@@ -129,7 +129,7 @@ export default async function Home() {
                 }
               >
                 {credential.role}{" "}
-                <span className="opacity-60">@ {credential.company}</span>
+                <span className="opacity-70">@ {credential.company}</span>
               </li>
             ))}
           </ul>
