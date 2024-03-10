@@ -2,7 +2,8 @@ import { ArticleCard } from "@/components/article-card";
 import { Content } from "@/components/content";
 import { NewsletterForm } from "@/components/snippets/newsletter";
 import Wide from "@/components/ui/formatting/wide";
-import { Heading } from "@/components/ui/heading";
+import { Heading, heading } from "@/components/ui/heading";
+import { classNames } from "@/functions/class-names";
 import { getArticles } from "@/functions/markdown";
 import Link from "next/link";
 
@@ -18,12 +19,21 @@ export default async function ArticleLayout({ params, children }) {
         </Wide>
       </Content>
       <Content className="pt-8 border-t border-gray-200 group/recent">
-        <Heading
-          size="h2"
-          className="mb-6 duration-200 sm:opacity-60 group-hover/recent:opacity-100"
+        <div
+          className={classNames(
+            "gap-x-2 mb-6 space-x-2 duration-200 sm:opacity-60 group-hover/recent:opacity-100",
+            heading({ size: "h2" })
+          )}
         >
-          Recent Stories.
-        </Heading>
+          <h2 className="inline">Recent Stories</h2>
+          <span className="opacity-60">/</span>
+          <Link
+            href="/blog"
+            className="opacity-70 hover:underline underline-offset-4"
+          >
+            Explore Stories
+          </Link>
+        </div>
         <div className="space-y-6 duration-100 sm:opacity-60 group-hover/recent:opacity-100">
           {articles
             .filter((article) => article.meta.slug !== params.slug)
@@ -32,9 +42,6 @@ export default async function ArticleLayout({ params, children }) {
             .map((article) => (
               <ArticleCard article={article} key={article.meta.title} />
             ))}
-        </div>
-        <div className="mt-8 text-lg opacity-70 lowercase hover:underline">
-          <Link href="/blog">Explore all Stories</Link>
         </div>
       </Content>
     </div>
