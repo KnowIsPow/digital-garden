@@ -338,6 +338,12 @@ export const books = [
     link: "https://amzn.to/49UznnR",
   },
   {
+    title: "Supercommunicators",
+    score: 6,
+    keyTakeaway: "How the worlds best communicators relate and connect.",
+    link: "https://amzn.to/43iYmPo",
+  },
+  {
     title: "Chop Wood Carry Water",
     score: 6,
     keyTakeaway: "A reminder to focus on the process and not the outcome.",
@@ -362,6 +368,12 @@ export const books = [
     score: 6,
     keyTakeaway: "",
     link: "https://amzn.to/4aeLYSD",
+  },
+  {
+    title: "10x Rule",
+    score: 6,
+    keyTakeaway: "It is your moral obligation to be as successful as possible.",
+    link: "https://amzn.to/4cc5KjD",
   },
   {
     title: "Purple Cow",
