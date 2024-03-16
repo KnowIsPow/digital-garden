@@ -2,6 +2,7 @@ import { Content } from "@/components/content";
 import { Header } from "@/components/header";
 import { Heading } from "@/components/ui/heading";
 import { books } from "@/data/books";
+import Link from "next/link";
 
 export const metadata = {
   title: "Book Recommendations",
@@ -35,9 +36,13 @@ export default async function BooksPage() {
           {books
             .sort((a, b) => b.score - a.score)
             .map((book) => (
-              <li key={book.title}>
-                <h2 className="font-medium">{`${book.title} – ⭐ ${book.score}`}</h2>
-                <p className="opacity-80">{book.keyTakeaway}</p>
+              <li key={book.title} className="group">
+                <Link href={book.link} target="_blank">
+                  <h2 className="font-medium group-hover:underline">
+                    {`${book.title} – ⭐ ${book.score}`}
+                  </h2>
+                  <p className="opacity-80">{book.keyTakeaway}</p>
+                </Link>
               </li>
             ))}
         </ul>
