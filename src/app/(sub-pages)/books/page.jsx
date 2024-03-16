@@ -39,7 +39,15 @@ export default async function BooksPage() {
               <li key={book.title} className="group">
                 <Link href={book.link} target="_blank">
                   <h2 className="font-medium group-hover:underline">
-                    {`${book.title} – ⭐ ${book.score}`}
+                    {`${book.title}`}
+                    <span className="group-hover:hidden">
+                      {" "}
+                      – ⭐ {book.score}
+                    </span>
+                    <span className="hidden group-hover:inline opacity-80">
+                      {" "}
+                      / purchase
+                    </span>
                   </h2>
                   <p className="opacity-80">{book.keyTakeaway}</p>
                 </Link>
