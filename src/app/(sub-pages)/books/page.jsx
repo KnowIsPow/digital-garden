@@ -38,13 +38,13 @@ export default async function BooksPage() {
             .map((book) => (
               <li key={book.title} className="group">
                 <Link href={book.link} target="_blank">
-                  <h2 className="font-medium group-hover:underline">
-                    {`${book.title}`}
+                  <h2 className="font-medium group-hover:underline underline-offset-4">
+                    <span className="group-hover:opacity-50">{book.title}</span>
                     <span className="group-hover:hidden">
                       {" "}
                       – ⭐ {book.score}
                     </span>
-                    <span className="hidden group-hover:inline opacity-80">
+                    <span className="hidden group-hover:inline group-hover:opacity-100">
                       {" "}
                       / purchase
                     </span>
