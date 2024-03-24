@@ -18,7 +18,7 @@ export default async function ArticleLayout({ params, children }) {
           <NewsletterForm />
         </Wide>
       </Content>
-      <Content className="pt-8 border-t border-gray-200 group/recent">
+      <Content className="group/recent">
         <div
           className={classNames(
             "gap-x-2 mb-6 space-x-2 duration-200 sm:opacity-60 group-hover/recent:opacity-100",
