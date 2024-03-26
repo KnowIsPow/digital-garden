@@ -3,9 +3,14 @@ import { Content } from "@/components/content";
 import { Header } from "@/components/header";
 import { heading } from "@/components/ui/heading";
 import { classNames } from "@/functions/class-names";
-import { getArticle } from "@/functions/markdown";
+import { getArticle, getArticles } from "@/functions/markdown";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  const articles = await getArticles();
+  return articles.map((article) => ({ slug: article.meta.slug }));
+}
 
 export async function generateMetadata({ params }) {
   const article = await getArticle(params.slug);
