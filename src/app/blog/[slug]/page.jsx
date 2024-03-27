@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: article.meta.metaTitle || article.meta.title,
       description: article.meta.description,
-      url: `/${params.slug}`,
+      url: `/blog/${params.slug}`,
     },
   };
 }
