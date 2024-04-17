@@ -344,6 +344,13 @@ export const books = [
     link: "https://amzn.to/43iYmPo",
   },
   {
+    title: "Trillion Dollar Coach",
+    score: 6,
+    keyTakeaway:
+      "The Story of Bill Campbell and his unique approach to coaching the worlds most prominent leaders.",
+    link: "https://amzn.to/49IvqSp",
+  },
+  {
     title: "Chop Wood Carry Water",
     score: 6,
     keyTakeaway: "A reminder to focus on the process and not the outcome.",
@@ -493,6 +500,12 @@ export const books = [
     score: 5,
     keyTakeaway: "Manifest what you want and you will get it.",
     link: "https://amzn.to/3IGtWgq",
+  },
+  {
+    title: "Little Book of Circle Processes",
+    score: 5,
+    keyTakeaway: "A guide to keeping indigenous talking & healing circles.",
+    link: "https://amzn.to/3xNe6OF",
   },
   {
     title: "The Great Mental Models",
