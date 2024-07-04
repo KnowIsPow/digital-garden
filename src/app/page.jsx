@@ -21,15 +21,17 @@ export default async function Home() {
   return (
     <div className="space-y-12">
       <Header>
-        <Heading>
+        <Heading className="font-extralight">
           <span className="block mb-4 text-xl font-medium">
             Hiya, I&apos;m Curtis Fisher 👋
           </span>
           Passionate advocate for{" "}
-          <span className="text-green-500">ethical business</span>
+          <span className="font-medium text-black">ethical business</span>
           {", "}
-          <span className="text-red-500">compassionate relationships</span>, and{" "}
-          <span className="text-yellow-500">living well</span>.
+          <span className="font-medium text-black">
+            compassionate relationships
+          </span>
+          , and <span className="font-medium text-black">living well</span>.
         </Heading>
       </Header>
       <div className="space-y-16 mx-auto max-w-3xl px-6 lg:px-8">
