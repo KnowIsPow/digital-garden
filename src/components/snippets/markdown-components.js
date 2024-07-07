@@ -8,6 +8,7 @@ import MagicChecklist from "@/components/snippets/visualization/magic-checklist"
 import Calendar from "@/components/calendar/";
 import Wide from "@/components/ui/formatting/wide";
 import { PinterestShare } from "../ui/pinterest-share";
+import { ImageGrid } from "./image/grid";
 
 export const markdownComponents = {
   img: (props) => (
@@ -42,4 +43,5 @@ export const markdownComponents = {
   MagicChecklist,
   Calendar,
   Wide,
+  ImageGrid,
 };
