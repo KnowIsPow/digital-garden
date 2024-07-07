@@ -9,6 +9,7 @@ import Calendar from "@/components/calendar/";
 import Wide from "@/components/ui/formatting/wide";
 import { PinterestShare } from "../ui/pinterest-share";
 import { ImageGrid } from "./image/grid";
+import { SpinningWheel } from "./spinning-wheel";
 
 export const markdownComponents = {
   img: (props) => (
@@ -44,4 +45,5 @@ export const markdownComponents = {
   Calendar,
   Wide,
   ImageGrid,
+  SpinningWheel,
 };
