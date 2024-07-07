@@ -1,4 +1,3 @@
-import { PinterestShare } from "@/components/ui/pinterest-share";
 import Image from "next/image";
 
 export function ImageGrid({ images }) {
