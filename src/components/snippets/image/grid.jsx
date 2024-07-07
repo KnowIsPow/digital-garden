@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ImageGrid({ images }) {
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 pb-6 lg:-mx-36 xl:-mx-48">
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 pb-6">
       {images.map(({ src, alt }) => (
         <Image
           src={src}
