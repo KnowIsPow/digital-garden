@@ -91,6 +91,13 @@ export const books = [
     link: "https://amzn.to/3vkTvjV",
   },
   {
+    title: "A Promised Land",
+    score: 8,
+    keyTakeaway:
+      "Such an interesting perspective on running the United States. Great storytelling.",
+    link: "https://www.amazon.com/Promised-Land-Barack-Obama/dp/1524763160",
+  },
+  {
     title: "The Body Keeps the Score",
     score: 8,
     keyTakeaway:
@@ -143,6 +150,13 @@ export const books = [
     link: "https://amzn.to/4901Vei",
   },
   {
+    title: "The Way of Integrity",
+    score: 7.5,
+    keyTakeaway:
+      "Application of Dante's Divine Comedy and how it applies to modern integrity.",
+    link: "https://www.amazon.com/Way-Integrity-Finding-Path-Your/dp/B08MWVTH6D?crid=PGHMI8ZIGXZ0&dib=eyJ2IjoiMSJ9.fCjUI8im7WExFezxXU7vKstqvtE_j9zU3oBa-NeKRSoxwPO0vWse8YmCsTLNNeQIQEpJTefYGWyazD-Qq24b-W2yiEnY61PGuZkIxOuji5dTjpgxU7vyraCa4s0qx37NtoknmolZ2g89OBygxWU_i-S3-Dl6arRhp_ITioDIGCKhd7smsgtAXebNuFwcdkA9Tv5rgrlNrJbK5T5vPxqD9AztdFnh6exxhXFPPtPvANo.462bzijQsfD52YABKs8trJAsou5MH4ZVmrOokVgZDQI&dib_tag=se&keywords=martha+beck&qid=1728441911&s=audible&sprefix=martha+beck,audible,182&sr=1-1",
+  },
+  {
     title: "The War of Art",
     score: 7.5,
     keyTakeaway:
@@ -174,6 +188,12 @@ export const books = [
     keyTakeaway:
       "A beautiful story about life, meaning, and life's trivialities.",
     link: "https://amzn.to/3IFe9yh",
+  },
+  {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    score: 7,
+    keyTakeaway: "A hilarious and captivating exploration of absurdism.",
+    link: "https://www.amazon.com/Hitchhikers-Guide-Galaxy/dp/B0009JKV9W?crid=3G8FIJY8CX7PA&dib=eyJ2IjoiMSJ9.f2P7MlQdyytDkPWNPNwdA0tPvVOCkIk6WA3wa2tIGjFP5dzlkhuxEfBdDix_9HjUx_gvNMnmoWv7n9hUZq0uLYdkIyfVD897hZ_9ymG6F_eq8b_jZAXR8P3cQVU3F3WcRR8MigMgVbm54Ox3pABbMg2g8h9j8F2oSxSCl_LIsgoC6sTQ_ty9v6i2zBGToLC380Oa2zQUnXgxsnVBvuRp0BZEPzvYFJYnc__EtWIcMTw.Uda6Duuz-QvaevP5WjJFxR8_3NKBHq-R10mSgM0Tufg&dib_tag=se&keywords=hitchhiker's+guide+to+the+galaxy&qid=1728441691&s=audible&sprefix=hitch,audible,208&sr=1-1",
   },
   {
     title: "Discourses of Epictetus",
@@ -330,6 +350,13 @@ export const books = [
     link: "https://amzn.to/48VjNas",
   },
   {
+    title: "Iron John",
+    score: 6,
+    keyTakeaway:
+      "Deep exploration of mythopoetic masculinity. Using storytelling, symbolism, and mythology to communicate profound masculine ideas.",
+    link: "https://www.amazon.com/Iron-John-Robert-Bly-audiobook/dp/B006ZRE9KE?crid=3A7VXJGZT3AY6&dib=eyJ2IjoiMSJ9.wIpJD8lKMeINwUxh7KFr9J461E0j0hwqQ-1tQiVC_GEsNYwqHpTOILKAOAytfglOIq999qTEhadTR_bYez-3R7Rd4TXpyoarMI8Ohkvxufg0RhPApqu2E5KevjvSlUY2rVAtiL0Su2VSCsi2Z4wAjyvol71oFuTnyXD11ndoGoaMsfUbYQKZ0cyaODXayyEUgKzgVcjSKnJmB6DWErS0NnarEW92dfQIYC4Jxly9ZAE.zVVGkq4m8Jk2DYUbKtKg8qJ_1xTVdaT_ng74DpQwc94&dib_tag=se&keywords=iron+john&qid=1728442078&s=audible&sprefix=iron+john,audible,210&sr=1-1",
+  },
+  {
     title:
       "Profit First: Transform Your Business from a Cash-Eating Monster to a Money-Making Machine",
     score: 6.5,
@@ -438,6 +465,13 @@ export const books = [
     link: "https://amzn.to/4cirhXF",
   },
   {
+    title: "Stealing Fire",
+    score: 6,
+    keyTakeaway:
+      "Deep dive into high performance and unlocking access to higher powers.",
+    link: "https://www.amazon.com/s?k=stealing+fire&i=stripbooks&crid=25GANKIXDN65C&sprefix=stealing+fir,stripbooks,169",
+  },
+  {
     title: "Anything You Want",
     score: 6,
     keyTakeaway: "A story about running a startup and leading a good life.",
@@ -471,11 +505,31 @@ export const books = [
     link: "https://amzn.to/3Ppvqzh",
   },
   {
+    title: "The Masculine in Relationship",
+    score: 6,
+    keyTakeaway:
+      "Exploration of masculine characteristics (for men and women).",
+    link: "https://www.amazon.com/Masculine-Relationship-Blueprint-Inspiring-Devotion/dp/B0B6RPCRFV?crid=3VB91NRNSL4N4&dib=eyJ2IjoiMSJ9.ztWUJfcjB9KwfgBzMuh_QY2e6-OO49xAinVjwCWdijfOiVKet2ll04rA_NHEb2xYdw1P8SGEW9c2NUnBuOU_9F1ZGEdDNJpVKPu1HqT5pcxQvRRVseqqr9KhjUGh1-8DEtwtBbAd5ccoZUD623LVFPepCaq1g_2F0UmwaAxqkY7Fifld1fOyiXj1K_6Fh5m5.4KglqlU4QTcrMdUmVVrijnLRtyf-_-la7QISh4ppBKw&dib_tag=se&keywords=the+masculine+in+relationship&qid=1728441789&s=audible&sprefix=the+masculine+in+relationship,audible,158&sr=1-1",
+  },
+  {
+    title: "The Tactical Guide to Women",
+    score: 6,
+    keyTakeaway:
+      "A thoughtful and honest approach to evaluating romantic relationships.",
+    link: "https://www.amazon.com/Tactical-Guide-Women-Manage-Marriage/dp/0990686442",
+  },
+  {
     title: "The Third Door",
     score: 6,
     keyTakeaway:
       "A story about the person power that comes with creating new options.",
     link: "https://amzn.to/49SH0ve",
+  },
+  {
+    title: "From The Core",
+    score: 6,
+    keyTakeaway: "Exploration of masculinity.",
+    link: "https://www.amazon.com/Core-Masculine-Paradigm-Leading-Healing/dp/B0BF7LH8MC?crid=29C2R0WJUCIZA&dib=eyJ2IjoiMSJ9.mXu44qC_D444vWUy9cSNffFOc4MUzi9AOIaKOvJYDl0dGHCKm7CF24Dz0SWIOZh9aA6A9bFaJdrw5G2OGR_yeKmBfmPaaZYnA925qLUaIDUy8KR3eQBV9G64DXA8ZVtEQGkJ1Y7mF5oUhy7dcAeMYhAzis8Jp36qVMmVW4hdUGrHSo3dg_YTmYqbW_UbBIULibkjye9spQ6a--EjdKIs1vEpSyEDOAlwLSm3_ra3ywg.TJVs-AIbqhkttPmoSHFx67RCXTYxTYHqtKukYzEntrY&dib_tag=se&keywords=from+the+core&qid=1728441622&s=books&sprefix=from+the+co,stripbooks,214&sr=1-1",
   },
   {
     title: "The Untethered Soul",
@@ -490,16 +544,41 @@ export const books = [
     link: "https://amzn.to/3TGXFfG",
   },
   {
+    title: "The Storytelling Animal",
+    score: 5,
+    keyTakeaway: "An exploration behind the psychology of storytelling.",
+    link: "https://www.amazon.com/Storytelling-Animal-Stories-Make-Human/dp/0544002342",
+  },
+  {
+    title: "The Science of Storytelling",
+    score: 5,
+    keyTakeaway: "A practical guide to telling good stories.",
+    link: "https://www.amazon.com/The-Science-of-Storytelling/dp/B0835V1KY5?crid=QPD5NN5F0FOV&dib=eyJ2IjoiMSJ9.cE2j0NMowR-V9ncFk-EBGmoelvg82IyK5k8DM2mYlASn0EQy8G4Pu8XQgR8EyBtLXhnT317bQ0cra7RZ3s7lmnUTu7koHZpAldJdtKcVTfEXormWk7khUcAmgCnwxmPCjTz9S1cr5yko7AVtpQeifM48LSNGTpTGoGvOjA5_B7yAMXdWH22Q5qUmwcAjC7QD8IBbXpg5BPa321oIcrzEhRna9_eVohoGzvXMsTF6Azc.1lkKTRcJcRTMoLJXG6t66a62MURfxgvnzfhpP14rlqc&dib_tag=se&keywords=science+of+storytelling&qid=1728441859&sprefix=science+of+storytellin,aps,227&sr=8-1",
+  },
+  {
     title: "The Effective Executive",
     score: 5,
     keyTakeaway: "",
     link: "https://amzn.to/3ICQAGz",
   },
   {
+    title: "Blitzscaling",
+    score: 6,
+    keyTakeaway: "A practical guide to rapidly scaling a company.",
+    link: "https://www.amazon.com/Blitzscaling-audiobook/dp/B07DJYYG66?crid=3W46T7JLRN8J3&dib=eyJ2IjoiMSJ9.EBGgI3nzFti0tNyOTCzLJuS5fSSEZn6G5K_KAUFUKPDGjHj071QN20LucGBJIEps.7GYyHuqjLdpdxp-Jw89A7CWnvKYsxaYDZxdsKGzruEY&dib_tag=se&keywords=blitzscaling&qid=1728442012&s=audible&sprefix=blitzscalin,audible,187&sr=1-1",
+  },
+  {
     title: "You're a Badass at Making Money",
     score: 5,
     keyTakeaway: "Manifest what you want and you will get it.",
     link: "https://amzn.to/3IGtWgq",
+  },
+  {
+    title: "How to Know A Person",
+    score: 5,
+    keyTakeaway:
+      "Candidly I spaced out while reading this... It's getting challenging to rank these books now.",
+    link: "https://www.amazon.com/How-Know-Person-Seeing-Others/dp/B0BXFNXWS7?crid=6XYTTL4EP1ZR&dib=eyJ2IjoiMSJ9.yVgl5-Q15X3W-3U0jzHWCHDIQW7Tz-TPspVe4wGpyoxqqAO0unbnacnrnmayybmKdKmGTLz9YMmw1DO2jqmAKH_y0UIFI6BytZ9EWyQ0ih5TYKTRwC0NarOpAZvoqS8ZDlSy_ZV0m4sUorghpo5KuhdZEb7IBraOgwBEW-GbkoLNqRxV_O-s25xbbXpZNQTZMF6MIuZNIlGBiaStqZrUSxPQEFyS8z_0InRPE765G-w.ZR96sAgBzHckAVw119MjHii2nSTnJWLkvefJacQHDIc&dib_tag=se&keywords=how+to+know+a+person&qid=1728441463&s=books&sprefix=how+to+know+a+perso,stripbooks,188&sr=1-1",
   },
   {
     title: "Little Book of Circle Processes",
