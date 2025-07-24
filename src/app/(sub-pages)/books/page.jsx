@@ -42,7 +42,7 @@ export default async function BooksPage() {
                     <span className="group-hover:opacity-50">{book.title}</span>
                     <span className="group-hover:hidden">
                       {" "}
-                      – ⭐ {book.score}
+                      – {book.qualitativeScore}
                     </span>
                     <span className="hidden group-hover:inline group-hover:opacity-100">
                       {" "}
