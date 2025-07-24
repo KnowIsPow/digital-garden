@@ -99,7 +99,9 @@ export default async function Home() {
             {books
               .sort((a, b) => b.score - a.score)
               .map((book) => (
-                <li key={book.title}>{`${book.title} – ⭐ ${book.score}`}</li>
+                <li
+                  key={book.title}
+                >{`${book.title} – ${book.qualitativeScore}`}</li>
               ))
               .slice(0, 5)}
           </ul>
