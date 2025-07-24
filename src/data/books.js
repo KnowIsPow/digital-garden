@@ -111,6 +111,12 @@ export const books = [
     link: "https://amzn.to/4ae2K4u",
   },
   {
+    title: "Essentialism",
+    score: 8,
+    keyTakeaway: "Do less, but better.",
+    link: "https://amzn.to/3PnzL6g",
+  },
+  {
     title: "Sapiens",
     score: 8,
     keyTakeaway: "The history of humanity.",
@@ -136,6 +142,13 @@ export const books = [
     link: "https://amzn.to/48VYG7Y",
   },
   {
+    title: "Born a Crime",
+    score: 7.5,
+    keyTakeaway:
+      "Listen to the audiobook. Beautiful autobiography of Trevor Noah learning to face life.",
+    link: "https://www.amazon.com/Born-Crime-Trevor-Noah-audiobook/dp/B01IW9TM5O?sr=8-1",
+  },
+  {
     title: "When Breath Becomes Air",
     score: 7.5,
     keyTakeaway:
@@ -148,6 +161,13 @@ export const books = [
     keyTakeaway:
       "The Hindu reflection of a good life. Lot's of wisdom to be gleaned from it.",
     link: "https://amzn.to/4901Vei",
+  },
+  {
+    title: "Project Hail Mary",
+    score: 7.5,
+    keyTakeaway:
+      "Listen to audiobook - I laughed, I cried, and I did jazz hands. It was awesome.",
+    link: "https://www.amazon.com/Project-Hail-Mary/dp/B08GB58KD5?sr=1-1",
   },
   {
     title: "The Way of Integrity",
@@ -209,6 +229,12 @@ export const books = [
     link: "https://amzn.to/3wYLC4n",
   },
   {
+    title: "Surely You're Joking, Mr. Feynman!",
+    score: 7,
+    keyTakeaway: "Learning to play in this dance we call life.",
+    link: "https://www.amazon.com/Surely-Youre-Joking-Mr-Feynman/dp/0393355624?sr=1-1",
+  },
+  {
     title: "Excellent Sheep",
     score: 7,
     keyTakeaway:
@@ -230,6 +256,13 @@ export const books = [
     link: "https://amzn.to/4chH74S",
   },
   {
+    title: "11-22-63",
+    score: 7,
+    keyTakeaway:
+      "A story of letting go of the future, and the difficulty of changing the past.",
+    link: "https://www.amazon.com/dp/1451627297/?bestFormat=true&k=11/22/63",
+  },
+  {
     title: "Cultivating an Unshakeable Character",
     score: 7,
     keyTakeaway: "Reflect on the components of your character.",
@@ -243,17 +276,18 @@ export const books = [
     link: "https://amzn.to/4ctD5GW",
   },
   {
+    title: "Soulcraft",
+    score: 7,
+    keyTakeaway:
+      "An exploration of the grand mystery and a personal approach to exploring it.",
+    link: "https://www.amazon.com/Soulcraft-Crossing-Mysteries-Nature-Psyche/dp/1577314220?sr=8-1",
+  },
+  {
     title: "Kaftka On The Shore",
     score: 7,
     keyTakeaway:
       "The closest you will get to consciously dreaming... This book is a deep dive into the subconscious.",
     link: "https://amzn.to/43kpYU6",
-  },
-  {
-    title: "Essentialism",
-    score: 7,
-    keyTakeaway: "Do less, but better.",
-    link: "https://amzn.to/3PnzL6g",
   },
   {
     title: "Slaughterhouse-Five",
@@ -276,6 +310,13 @@ export const books = [
     link: "https://amzn.to/3ID5iNG",
   },
   {
+    title: "Turning Pro",
+    score: 7,
+    keyTakeaway:
+      "Learning to play a higher-stakes, no excuses game. Lean into life with integrity and conviction.",
+    link: "https://www.amazon.com/Turning-Pro-Steven-Pressfield-audiobook/dp/B07FWS2FHP?sr=1-1",
+  },
+  {
     title: "The School Of Life: An Emotional Education",
     score: 7,
     keyTakeaway:
@@ -289,6 +330,12 @@ export const books = [
     link: "https://amzn.to/3PnafxU",
   },
   {
+    title: "Stoner",
+    score: 7,
+    keyTakeaway: "A story about perseverance and honoring what feels true.",
+    link: "https://www.amazon.com/Stoner-John-Williams-audiobook/dp/B003SRWEGK?sr=1-1",
+  },
+  {
     title: "48 Laws of Power",
     score: 7,
     keyTakeaway:
@@ -296,10 +343,25 @@ export const books = [
     link: "https://amzn.to/3TiHHqs",
   },
   {
+    title: "Let My People Go Surfing",
+    score: 7,
+    keyTakeaway:
+      "What can happen when you pursue a cause that you really care about, making sure to have some fun along the way.",
+    link: "https://www.amazon.com/Let-My-People-Go-Surfing-audiobook/dp/B01KB9LY6I?sr=1-1",
+  },
+  {
     title: "Sex At Dawn",
     score: 7,
     keyTakeaway: "Learn about human mating behaviors.",
     link: "https://amzn.to/49Ue0mO",
+  },
+  {
+    title:
+      "Alchemy: The Dark Art And Curious Science of Creating Magic in Brands, Business, and Life",
+    score: 7,
+    keyTakeaway:
+      "The opposite of a good thing is also a good thing. This book helps tap into the unexpected, weird, and magical to create the remarkable.",
+    link: "https://www.amazon.com/Alchemy-Rory-Sutherland-audiobook/dp/B07PQTT7B4?sr=1-1",
   },
   {
     title: "101 Essays That Will Change the Way You Think",
@@ -309,11 +371,29 @@ export const books = [
     link: "https://amzn.to/49SGCNi",
   },
   {
+    title: "The Storyteller",
+    score: 6.5,
+    keyTakeaway: "A bunch of great life-stories from an epic dude.",
+    link: "https://www.amazon.com/Storyteller-Expanded-Because-Theres-Story/dp/B0C15MH89K?sr=1-2",
+  },
+  {
     title: "Get Together",
     score: 6.5,
     keyTakeaway:
       "Learn how to build, grown, and sustain community from some of the best.",
     link: "https://amzn.to/4aa6lRz",
+  },
+  {
+    title: "The Ride of a Lifetime",
+    score: 6.5,
+    keyTakeaway: "A well-rounded and love-centered book on leadership.",
+    link: "https://www.amazon.com/The-Ride-of-Lifetime-Robert-Iger-audiobook/dp/B07QW2LHN4?sr=1-1",
+  },
+  {
+    title: "Becoming nobody.",
+    score: 6.5,
+    keyTakeaway: "My first introduction to Ram Das. Some bangers in here.",
+    link: "https://www.amazon.com/Becoming-Nobody-Ram-Dass-audiobook/dp/B07WGQGJR7?sr=1-1",
   },
   {
     title: "Crucial Conversations",
@@ -398,16 +478,35 @@ export const books = [
     link: "https://amzn.to/3wYMaqX",
   },
   {
+    title: "Human Hacking",
+    score: 6,
+    keyTakeaway: "An ethical approach to getting what you want.",
+    link: "https://www.amazon.com/Human-Hacking-Friends-Influence-People/dp/B0872KD4QW?sr=1-1",
+  },
+  {
     title: "Rework",
     score: 6,
     keyTakeaway: "",
     link: "https://amzn.to/4aeLYSD",
   },
   {
+    title: "A Court of Thorns and Roses",
+    score: 6,
+    keyTakeaway: "An epic story of the power of romantic love.",
+    link: "https://www.amazon.com/Court-Thorns-Roses-Sarah-Maas-ebook/dp/B00OZP5VRS?sr=1-2",
+  },
+  {
     title: "10x Rule",
     score: 6,
     keyTakeaway: "It is your moral obligation to be as successful as possible.",
     link: "https://amzn.to/4cc5KjD",
+  },
+  {
+    title: "The Dip",
+    score: 6,
+    keyTakeaway:
+      "Know when to quit and know when to give it everything you've got.",
+    link: "https://www.amazon.com/The-Dip-Seth-Godin-audiobook/dp/B000R9Q9C2?sr=1-1",
   },
   {
     title: "Purple Cow",
@@ -526,6 +625,13 @@ export const books = [
     link: "https://amzn.to/49SH0ve",
   },
   {
+    title: "Single on Purpose",
+    score: 6,
+    keyTakeaway:
+      "Why it's valuable to be single for a while and focus on self.",
+    link: "https://www.amazon.com/Single-Purpose-Redefine-Everything-Yourself/dp/B0872KDLF7?sr=1-1",
+  },
+  {
     title: "From The Core",
     score: 6,
     keyTakeaway: "Exploration of masculinity.",
@@ -536,6 +642,30 @@ export const books = [
     score: 5,
     keyTakeaway: "Getting in touch with divinity within.",
     link: "https://amzn.to/3TDULrN",
+  },
+  {
+    title: "Breath",
+    score: 5,
+    keyTakeaway: "Breathing through nose > breathing through mouth.",
+    link: "https://www.amazon.com/Breath-New-Science-Lost-Art/dp/B082FPZC4H?sr=1-1",
+  },
+  {
+    title: "The Enchanted Life",
+    keyTakeaway:
+      "Learn to see the magic of the little things that have always been there.",
+    link: "https://www.amazon.com/The-Enchanted-Life-Sharon-Blackie-audiobook/dp/B07LGJKW17?sr=1-1",
+  },
+  {
+    title: "Sovereign Love",
+    score: 5,
+    keyTakeaway: "How to integrate masculine and feminine energies with love.",
+    link: "https://www.amazon.com/Sovereign-Love-Relationships-Reclaiming-Masculine/dp/B0D1KRGV47?sr=8-1",
+  },
+  {
+    title: "The Prophet",
+    score: 5,
+    keyTakeaway: "A collection of life advice.",
+    link: "https://www.amazon.com/The-Prophet-Kahlil-Gibran-audiobook/dp/B07MD6FXR1?sr=1-1",
   },
   {
     title: "Lord of the Flies",
@@ -581,6 +711,13 @@ export const books = [
     link: "https://www.amazon.com/How-Know-Person-Seeing-Others/dp/B0BXFNXWS7?crid=6XYTTL4EP1ZR&dib=eyJ2IjoiMSJ9.yVgl5-Q15X3W-3U0jzHWCHDIQW7Tz-TPspVe4wGpyoxqqAO0unbnacnrnmayybmKdKmGTLz9YMmw1DO2jqmAKH_y0UIFI6BytZ9EWyQ0ih5TYKTRwC0NarOpAZvoqS8ZDlSy_ZV0m4sUorghpo5KuhdZEb7IBraOgwBEW-GbkoLNqRxV_O-s25xbbXpZNQTZMF6MIuZNIlGBiaStqZrUSxPQEFyS8z_0InRPE765G-w.ZR96sAgBzHckAVw119MjHii2nSTnJWLkvefJacQHDIc&dib_tag=se&keywords=how+to+know+a+person&qid=1728441463&s=books&sprefix=how+to+know+a+perso,stripbooks,188&sr=1-1",
   },
   {
+    title: "The Masculine Road",
+    score: 5,
+    keyTakeaway:
+      "A small dive into Robert Bly's study of masculine archetypes.",
+    link: "https://www.amazon.com/The-Masculine-Road-Robert-Bly-audiobook/dp/B001K56QYI?sr=1-1",
+  },
+  {
     title: "Little Book of Circle Processes",
     score: 5,
     keyTakeaway: "A guide to keeping indigenous talking & healing circles.",
@@ -597,6 +734,12 @@ export const books = [
     score: 5,
     keyTakeaway: "A guide to no-bullshit, zero game-playing, authentic dating",
     link: "https://amzn.to/3vd6yUC",
+  },
+  {
+    title: "Women Who Run with the Wolves",
+    score: 4,
+    keyTakeaway: "Exploring the feminine archetype. Good short read.",
+    link: "https://www.amazon.com/Women-Who-Run-Wolves-Archetype/dp/0345409876?sr=8-1",
   },
   {
     title: "The $100 Startup",
