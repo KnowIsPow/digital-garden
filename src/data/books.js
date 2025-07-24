@@ -432,8 +432,8 @@ export const books = [
   {
     title: "Stillness Is the Key",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/3Vl4qot",
   },
   {
     title: "Anything You Want",
@@ -458,8 +458,9 @@ export const books = [
   {
     title: "The Enchanted Life",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway:
+      "Learn to see the magic of the little things that have always been there.",
+    link: "https://www.amazon.com/The-Enchanted-Life-Sharon-Blackie-audiobook/dp/B07LGJKW17?sr=1-1",
   },
   {
     title: "Think Like A Monk",
@@ -476,8 +477,8 @@ export const books = [
   {
     title: "Rework",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/4aeLYSD",
   },
   {
     title: "Chop Wood Carry Water",
@@ -495,8 +496,8 @@ export const books = [
   {
     title: "The 7 Habits of Highly Effective People",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/4cftT8X",
   },
   {
     title: "How to Be Perfect",
@@ -574,8 +575,8 @@ export const books = [
   {
     title: "The Go-Giver",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/3VlukZb",
   },
   {
     title: "Blitzscaling",
@@ -604,8 +605,8 @@ export const books = [
   {
     title: "Unfu*k Yourself",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/3v2qpGc",
   },
   {
     title: "Sovereign Love",
@@ -636,8 +637,8 @@ export const books = [
   {
     title: "Rich Dad Poor Dad",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/3v5gLTd",
   },
   {
     title: "The Tactical Guide to Women",
@@ -649,8 +650,8 @@ export const books = [
   {
     title: "The Effective Executive",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/3ICQAGz",
   },
   {
     title: "The Masculine in Relationship",
@@ -762,8 +763,8 @@ export const books = [
   {
     title: "High Performance Habits",
     qualitativeScore: "👍 Helpful",
-    keyTakeaway: "Not found in original list.",
-    link: "",
+    keyTakeaway: "",
+    link: "https://amzn.to/4cc7nhj",
   },
   {
     title: "Start With Why",
