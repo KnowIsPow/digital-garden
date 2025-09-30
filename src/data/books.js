@@ -76,6 +76,13 @@ export const books = [
     link: "https://amzn.to/3wUm5cu",
   },
   {
+    title: "Jonathan Livingston Seagull",
+    qualitativeScore: "✅ Great",
+    keyTakeaway:
+      "Pursue what you love with devotion and the rest will fall into place.",
+    link: "https://www.amazon.com/dp/147679331X/?bestFormat=true&k=jonathan%20livingston%20seagull",
+  },
+  {
     title: "The Way of the Superior Man",
     qualitativeScore: "✅ Great",
     keyTakeaway:
@@ -258,6 +265,12 @@ export const books = [
     link: "https://www.amazon.com/Alchemy-Rory-Sutherland-audiobook/dp/B07PQTT7B4?sr=1-1",
   },
   {
+    title: "The Bobiverse Series (four books)",
+    qualitativeScore: "✅ Great",
+    keyTakeaway: "A story that shows what a humanistic future might look like.",
+    link: "https://www.amazon.com/Bobiverse-5-book-series/dp/B0753LBFQ7",
+  },
+  {
     title: "Slaughterhouse-Five",
     qualitativeScore: "✅ Great",
     keyTakeaway: "Death and war and a well-written novel.",
@@ -297,18 +310,18 @@ export const books = [
     link: "https://amzn.to/49SGCNi",
   },
   {
-    title: "The School Of Life: An Emotional Education",
-    qualitativeScore: "✅ Great",
-    keyTakeaway:
-      "Dives into psychology, culture, work, and relationships in an approachable way.",
-    link: "https://amzn.to/4a12t5i",
-  },
-  {
     title: "Born a Crime",
     qualitativeScore: "✅ Great",
     keyTakeaway:
       "Listen to the audiobook. Beautiful autobiography of Trevor Noah learning to face life.",
     link: "https://www.amazon.com/Born-Crime-Trevor-Noah-audiobook/dp/B01IW9TM5O?sr=8-1",
+  },
+  {
+    title: "The School Of Life: An Emotional Education",
+    qualitativeScore: "✅ Great",
+    keyTakeaway:
+      "Dives into psychology, culture, work, and relationships in an approachable way.",
+    link: "https://amzn.to/4a12t5i",
   },
   {
     title:
@@ -440,6 +453,13 @@ export const books = [
     qualitativeScore: "👍 Helpful",
     keyTakeaway: "A story about running a startup and leading a good life.",
     link: "https://amzn.to/4cc7HN3",
+  },
+  {
+    title: "Ishmael",
+    qualitativeScore: "👍 Helpful",
+    keyTakeaway:
+      "An exploration of our cultural myth around the world being a place we are here to control.",
+    link: "https://www.amazon.com/Ishmael-Novel-Book-1-ebook/dp/B000SEFH6A?sr=1-1",
   },
   {
     title: "Stealing Fire",
@@ -597,6 +617,13 @@ export const books = [
     link: "https://amzn.to/3wYLC4n",
   },
   {
+    title: "No Cure for Being Human",
+    qualitativeScore: "👍 Helpful",
+    keyTakeaway:
+      "Learning to become comfortable with the fallibility of our humanness.",
+    link: "https://www.amazon.com/No-Cure-Being-Human-Truths/dp/0593230779",
+  },
+  {
     title: "The $100 Startup",
     qualitativeScore: "👍 Helpful",
     keyTakeaway: "Learn how to run a startup in the modern age.",
@@ -739,6 +766,12 @@ export const books = [
     qualitativeScore: "👍 Helpful",
     keyTakeaway: "A story about what always stays the same for humans.",
     link: "https://amzn.to/43rPyqw",
+  },
+  {
+    title: "Reboot",
+    qualitativeScore: "👍 Helpful",
+    keyTakeaway: "A buddhist perspective on leadership.",
+    link: "https://www.amazon.com/Reboot-Leadership-Art-Growing-Up/dp/0062749536",
   },
   {
     title: "Single on Purpose",
